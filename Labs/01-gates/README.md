@@ -38,14 +38,36 @@ https://www.edaplayground.com/x/8NeY
 
 ### Verification of boolean postulates
 #### Formula
+![formula of Boolean postulates](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Postulates_Formula.gif)
 #### Table 
+| **x** | **b** |**<span style="text-decoration:overline">x</span>** | 
+| - | - | - | :-: | 
+| 0 | 0 | 0 | 1 | 
+| 0 | 0 | 1 | 1 | 
+| 0 | 1 | 0 | 0 |  
+| 0 | 1 | 1 | 0 |  
+| 1 | 0 | 0 | 0 |  
+| 1 | 0 | 1 | 1 |  
+| 1 | 1 | 0 | 0 | 
+| 1 | 1 | 1 | 0 |  
 #### Code snippet 
 #### Screenshot
 #### EDA playground link
 
 
 ### Verification of distributive laws
+![formula of Distributive laws](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Distributive_Laws.gif)
 #### Formula
+| **X** | **Y** |**Z** | **f(c,b,a)** |
+| - | - | - | :-: | 
+| 0 | 0 | 0 |  | 
+| 0 | 0 | 1 |  | 
+| 0 | 1 | 0 |  |  
+| 0 | 1 | 1 |  |  
+| 1 | 0 | 0 |  |  
+| 1 | 0 | 1 |  |  
+| 1 | 1 | 0 |  | 
+| 1 | 1 | 1 |  |  
 #### Table 
 #### Code snippet 
 #### Screenshot

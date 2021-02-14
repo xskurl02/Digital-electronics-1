@@ -32,3 +32,4 @@ end architecture dataflow;
 
 
 #### EDA playground link
+https://www.edaplayground.com/x/8NeY

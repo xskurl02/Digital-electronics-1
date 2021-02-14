@@ -35,7 +35,17 @@ end architecture dataflow;
 https://www.edaplayground.com/x/8NeY
 
 
-### verification of Distributive laws
+
+### verification of boolean postulates
+#### formula
+#### Table 
+#### Code snippet 
+#### Screenshot
+#### EDA playground link
+
+
+### verification of distributive laws
+#### formula
 #### Table 
 #### Code snippet 
 #### Screenshot

@@ -28,7 +28,7 @@ end architecture dataflow;
 ```
 
 #### Screenshot
-![Screenshot of analysis](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/De-morgan%20laws.png)
+![Screenshot of analysis](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Analysis_Screenshots/De_morgan%20laws.png)
 
 
 #### EDA playground link

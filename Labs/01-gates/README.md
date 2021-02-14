@@ -5,7 +5,7 @@
 #### Table 
 
 |![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/De_Morgan/De_Morgan_C.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/De_Morgan/De_Morgan_B.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/De_Morgan/De_Morgan_A.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/De_Morgan/De_Morgan_F.gif)|
-| - | - | - | :-: | 
+| :-: | :-: | :-: | :-: | 
 | 0 | 0 | 0 | 1 | 
 | 0 | 0 | 1 | 1 | 
 | 0 | 1 | 0 | 0 |  
@@ -41,7 +41,7 @@ https://www.edaplayground.com/x/8NeY
 ![formula of Boolean postulates](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Postulates_Formula.gif)
 #### Table 
 |![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Postulate/Postulate_1.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Postulate/Postulate_2.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Postulate/Postulate_3.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Postulate/Postulate_4.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Postulate/Postulate_5.gif)|
-| - |  :-: |  -  | -  |  - | 
+| :-: |  :-: |  :-:  | :-:  |  :-: | 
 | 0 |   1  |  1  |    |    |
 | 1 |   1  |  1  |    |    |
 #### Code snippet 
@@ -67,7 +67,7 @@ https://www.edaplayground.com/x/EsHA
 ![formula of Distributive laws](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Distributive_Laws.gif)
 #### Table 
 | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_x.gif) | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_y.gif) |![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_z.gif) | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_1.gif) | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_2.gif) | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_3.gif) | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_4.gif)
-| - | - | - | :-: | :-: | :-: | :-: | 
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | 
 | 0 | 0 | 0 |     | 0   | 0   |     | 
 | 0 | 0 | 0 |     | 0   | 0   |     | 
 | 0 | 0 | 0 |     | 0   | 0   |     |  

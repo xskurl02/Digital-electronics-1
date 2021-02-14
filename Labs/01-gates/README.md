@@ -33,3 +33,10 @@ end architecture dataflow;
 
 #### EDA playground link
 https://www.edaplayground.com/x/8NeY
+
+
+### verification of Distributive laws
+#### Table 
+#### Code snippet 
+#### Screenshot
+#### EDA playground link

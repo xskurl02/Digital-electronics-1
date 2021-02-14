@@ -1,11 +1,11 @@
 ## My assigment  
 
-### verification of De Morgan's laws
+### Verification of De Morgan's laws
 
 #### Table 
 
 | **c** | **b** |**a** | **f(c,b,a)** |
-| - | - | - | - | 
+| - | - | - | :-: | 
 | 0 | 0 | 0 | 1 | 
 | 0 | 0 | 1 | 1 | 
 | 0 | 1 | 0 | 0 |  
@@ -36,16 +36,32 @@ https://www.edaplayground.com/x/8NeY
 
 
 
-### verification of boolean postulates
-#### formula
+### Verification of boolean postulates
+#### Formula
+![formula of Boolean postulates](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Postulates_Formula.gif)
 #### Table 
+| **x** |**x** | 
+| - | :-: | 
+| 0 |  | 
+| 1 |  | 
 #### Code snippet 
 #### Screenshot
 #### EDA playground link
 
 
-### verification of distributive laws
-#### formula
+### Verification of distributive laws
+![formula of Distributive laws](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Distributive_Laws.gif)
+#### Formula
+| **X** | **Y** |**Z** | **f(c,b,a)** |
+| - | - | - | :-: | 
+| 0 | 0 | 0 |  | 
+| 0 | 0 | 1 |  | 
+| 0 | 1 | 0 |  |  
+| 0 | 1 | 1 |  |  
+| 1 | 0 | 0 |  |  
+| 1 | 0 | 1 |  |  
+| 1 | 1 | 0 |  | 
+| 1 | 1 | 1 |  |  
 #### Table 
 #### Code snippet 
 #### Screenshot

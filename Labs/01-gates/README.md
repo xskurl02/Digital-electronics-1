@@ -72,7 +72,7 @@ https://www.edaplayground.com/x/EsHA
 
 #### Table 
 | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_x.gif) | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_y.gif) |![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_z.gif) | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_1.gif) | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_2.gif) | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_3.gif) | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_4.gif)
-| :-:x | :-: y| :-:z | :-: | :-: | :-: | :-: | 
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | 
 | 0 | 0 | 0 |  0  | 0   | 0   | 0   | 
 | 1 | 0 | 0 |  0  | 0   | 1   | 1   | 
 | 0 | 1 | 0 |  0  | 0   | 0   | 0   |  

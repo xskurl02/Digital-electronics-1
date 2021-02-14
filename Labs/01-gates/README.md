@@ -57,7 +57,7 @@ begin
 end architecture dataflow;
 ```
 #### Screenshot
-![Screenshot of analysis]https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Analysis_Screenshots/Postulates.png
+![Screenshot of analysis](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Analysis_Screenshots/Postulates.png)
 
 #### EDA playground link
 https://www.edaplayground.com/x/EsHA

@@ -41,9 +41,9 @@ https://www.edaplayground.com/x/8NeY
 ![formula of Boolean postulates](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Postulates_Formula.gif)
 #### Table 
 |![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Postulate/Postulate_1.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Postulate/Postulate_2.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Postulate/Postulate_3.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Postulate/Postulate_4.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Postulate/Postulate_5.gif)|
-| - | :-: |    |  |  |
-| 0 |     |    |  |  |
-| 1 |     |    |  |  |
+| - |  :-: |  -  | -  |  - | 
+| 0 |   1  |  1  |    |    |
+| 1 |   1  |  1  |    |    |
 #### Code snippet 
 #### Screenshot
 #### EDA playground link

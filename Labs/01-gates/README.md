@@ -1,11 +1,11 @@
 ## My assigment  
 
-### verification of De Morgan's laws
+### Verification of De Morgan's laws
 
 #### Table 
 
 | **c** | **b** |**a** | **f(c,b,a)** |
-| - | - | - | - | 
+| - | - | - | :-: | 
 | 0 | 0 | 0 | 1 | 
 | 0 | 0 | 1 | 1 | 
 | 0 | 1 | 0 | 0 |  
@@ -36,16 +36,16 @@ https://www.edaplayground.com/x/8NeY
 
 
 
-### verification of boolean postulates
-#### formula
+### Verification of boolean postulates
+#### Formula
 #### Table 
 #### Code snippet 
 #### Screenshot
 #### EDA playground link
 
 
-### verification of distributive laws
-#### formula
+### Verification of distributive laws
+#### Formula
 #### Table 
 #### Code snippet 
 #### Screenshot

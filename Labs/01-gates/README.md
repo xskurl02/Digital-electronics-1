@@ -45,9 +45,20 @@ https://www.edaplayground.com/x/8NeY
 | 0 |   1  |  1  |    |    |
 | 1 |   1  |  1  |    |    |
 #### Code snippet 
+
+```vhdl
+architecture dataflow of gates is
+begin
+    f1_o  <= (x_i and (not x_i));
+    f2_o  <= (x_i or (not x_i));
+    f3_o  <= (x_i or x_i or x_i);
+    f4_o  <= (x_i and x_i and x_i);
+
+end architecture dataflow;
+```
 #### Screenshot
 #### EDA playground link
-
+https://www.edaplayground.com/x/EsHA
 
 ### Verification of distributive laws
 #### Formula

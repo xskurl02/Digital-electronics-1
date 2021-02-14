@@ -40,16 +40,10 @@ https://www.edaplayground.com/x/8NeY
 #### Formula
 ![formula of Boolean postulates](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Postulates_Formula.gif)
 #### Table 
-| **x** | **b** |**<span style="text-decoration:overline">x</span>** | 
-| - | - | - | :-: | 
-| 0 | 0 | 0 | 1 | 
-| 0 | 0 | 1 | 1 | 
-| 0 | 1 | 0 | 0 |  
-| 0 | 1 | 1 | 0 |  
-| 1 | 0 | 0 | 0 |  
-| 1 | 0 | 1 | 1 |  
-| 1 | 1 | 0 | 0 | 
-| 1 | 1 | 1 | 0 |  
+| **x** |**x** | 
+| - | :-: | 
+| 0 |  | 
+| 1 |  | 
 #### Code snippet 
 #### Screenshot
 #### EDA playground link

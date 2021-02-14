@@ -50,8 +50,9 @@ https://www.edaplayground.com/x/8NeY
 
 
 ### Verification of distributive laws
-![formula of Distributive laws](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Distributive_Laws.gif)
 #### Formula
+![formula of Distributive laws](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Distributive_Laws.gif)
+#### Table 
 | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_x.gif) | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_y.gif) |![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_z.gif) | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_1.gif) | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_2.gif) | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_3.gif) | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_4.gif)
 | - | - | - | :-: | :-: | :-: | :-: | 
 | 0 | 0 | 0 |     | 0   | 0   |     | 
@@ -62,7 +63,6 @@ https://www.edaplayground.com/x/8NeY
 | 0 | 0 | 0 |     | 0   | 0   |     |  
 | 0 | 0 | 0 |     | 0   | 0   |     | 
 | 0 | 0 | 0 |     | 0   | 0   |     |  
-#### Table 
 #### Code snippet 
 #### Screenshot
 #### EDA playground link

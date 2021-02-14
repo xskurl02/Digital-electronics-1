@@ -1,6 +1,12 @@
-## Nadpis 
+## My assigment  
 
-####De Morgan's laws
+### verification of De Morgan's laws
+
+#### Table 
+
+
+
+#### Code snippet 
 ```vhdl
 architecture dataflow of gates is
 begin
@@ -11,3 +17,8 @@ begin
 end architecture dataflow;
 
 ```
+#### Screenshot
+
+
+
+#### EDA playground link

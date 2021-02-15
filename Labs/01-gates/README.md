@@ -1,5 +1,5 @@
 # My assigment  
-link to this repo:https://github.com/xskurl02/Digital-electronics-1
+link to this repo:https://github.com/xskurl02/Digital-electronics-1/tree/main/Labs/01-gates
 ## Verification of De Morgan's laws
 
 ### Formula

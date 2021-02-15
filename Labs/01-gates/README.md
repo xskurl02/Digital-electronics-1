@@ -3,7 +3,7 @@
 ### Verification of De Morgan's laws
 
 #### Formula
-
+![formula of De Morgan Theorem](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/De_Morgan_Theorem.gif)
 #### Table 
 
 |![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/De_Morgan/De_Morgan_C.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/De_Morgan/De_Morgan_B.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/De_Morgan/De_Morgan_A.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/De_Morgan/De_Morgan_F.gif)|

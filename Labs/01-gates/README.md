@@ -1,10 +1,10 @@
-## My assigment  
+# My assigment  
+link to this repo:https://github.com/xskurl02/Digital-electronics-1
+## Verification of De Morgan's laws
 
-### Verification of De Morgan's laws
-
-#### Formula
+### Formula
 ![formula of De Morgan Theorem](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/De_Morgan_Theorem.gif)
-#### Table 
+### Table 
 
 |![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/De_Morgan/De_Morgan_C.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/De_Morgan/De_Morgan_B.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/De_Morgan/De_Morgan_A.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/De_Morgan/De_Morgan_F.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/De_Morgan/De_Morgan_NAND.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/De_Morgan/De_Morgan_NOR.gif)|
 | :-: | :-: | :-: | :-: | :-: | :-: | 
@@ -17,7 +17,7 @@
 | 1 | 1 | 0 | 0 |  0 |  0 | 
 | 1 | 1 | 1 | 0 |  0 |  0 | 
 
-#### Code snippet 
+### Code snippet 
 ```vhdl
 architecture dataflow of gates is
 begin
@@ -29,27 +29,27 @@ end architecture dataflow;
 
 ```
 
-#### Screenshot
+### Screenshot
 ![Screenshot of analysis](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Analysis_Screenshots/De_morgan%20laws.png)
 
 
-#### EDA playground link
+### EDA playground link
 https://www.edaplayground.com/x/8NeY
 
 
 
-### Verification of boolean postulates
+## Verification of boolean postulates
 
-#### Formula
+### Formula
 ![formula of Boolean postulates](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Postulate_Formula.gif)
 
-#### Table 
+### Table 
 |![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Postulate/Postulate_1.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Postulate/Postulate_2.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Postulate/Postulate_3.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Postulate/Postulate_4.gif)|![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Postulate/Postulate_5.gif)|
 | :-: |  :-: |  :-:  | :-:  |  :-: | 
 | 0 |   0  |  1  | 0 | 0  |
 | 1 |   0  |  1  | 1 | 1  |
 
-#### Code snippet 
+### Code snippet 
 
 ```vhdl
 architecture dataflow of gates is
@@ -61,18 +61,18 @@ begin
 
 end architecture dataflow;
 ```
-#### Screenshot
+### Screenshot
 ![Screenshot of analysis](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Analysis_Screenshots/Postulates.png)
 
-#### EDA playground link
+### EDA playground link
 https://www.edaplayground.com/x/EsHA
 
-### Verification of distributive laws
+## Verification of distributive laws
 
-#### Formula
+### Formula
 ![formula of Distributive laws](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Distributive_Laws.gif)
 
-#### Table 
+### Table 
 | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_x.gif) | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_y.gif) |![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_z.gif) | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_1.gif) | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_2.gif) | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_3.gif) | ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Table_Contents/Distributive/Distributive_4.gif)
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | 
 | 0 | 0 | 0 |  0  | 0   | 0   | 0   | 
@@ -84,7 +84,7 @@ https://www.edaplayground.com/x/EsHA
 | 0 | 1 | 1 |  0  | 0   | 1   | 1   | 
 | 1 | 1 | 1 |  1  | 1   | 1   | 1   |  
 
-#### Code snippet
+### Code snippet
 ```vhdl
 architecture dataflow of gates is
 begin
@@ -95,8 +95,12 @@ begin
 
 end architecture dataflow;
 ```
-#### Screenshot
+### Screenshot
 ![Screenshot of analysis](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/01-gates/Images/Analysis_Screenshots/Distributive_laws.png)
 
-#### EDA playground link
+### EDA playground link
 https://www.edaplayground.com/x/HcFX
+
+
+
+

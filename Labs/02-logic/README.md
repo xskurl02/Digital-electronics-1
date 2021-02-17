@@ -25,5 +25,7 @@
 
 According to the truth table, write canonical SoP (Sum of Products) and PoS (Product of Sums) forms for "equals" and "less than" functions:
 
+Sop=
+Pos=
 
 

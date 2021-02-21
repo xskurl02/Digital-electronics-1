@@ -27,13 +27,13 @@
 
 
 ## 2. 2-bit comparator
-## karnaugh maps
+### Karnaugh maps
 
 |**B<A**  |   **B=A**       | **B>A** |
 |:-:|:-:|:-:|
 |![POS](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Karnaugh%20Maps/kmap_lesser.png) | ![SOP](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Karnaugh%20Maps/kmap_equals.png)|![SOP](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Karnaugh%20Maps/kmap_greater.png)|
 
-
+### SoP and PoS
 
 |**SoP form of the "greater than" function**  | **PoS form of the "less than" function** |
 |:-:|:-:|

@@ -1,8 +1,5 @@
 # Lab 2: Combinational logic
 
-### link to this repo 
-https://github.com/xskurl02/Digital-electronics-1/tree/main/Labs/02-logic
-
 ## 1.Preparation tasks
 
 | **Dec. equivalent** |**B1**|**B0**|**A1**|**A0**|**B > A**|**B = A**|**B < A**|
@@ -407,5 +404,7 @@ end architecture testbench;
 https://www.edaplayground.com/x/HaAE
 
 
+### link to this repo 
+https://github.com/xskurl02/Digital-electronics-1/tree/main/Labs/02-logic
 
 

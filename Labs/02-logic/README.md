@@ -1,6 +1,6 @@
 # Lab 2: Combinational logic
 
-## link to this repo 
+### link to this repo 
 https://github.com/xskurl02/Digital-electronics-1/tree/main/Labs/02-logic
 
 ## 1.Preparation tasks

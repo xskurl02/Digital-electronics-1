@@ -31,7 +31,9 @@ According to the truth table, write canonical SoP (Sum of Products) and PoS (Pro
 
 
 ## Logic function minimization
+"greater than" function
 ![SOP](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Greater_SOP.png) &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+"less than" function
 ![POS](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Less_POS.png)
 
 simplified SoP form of the "greater than" function and a simplified PoS form of the "less than" function.

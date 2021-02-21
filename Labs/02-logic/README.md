@@ -30,3 +30,4 @@ According to the truth table, write canonical SoP (Sum of Products) and PoS (Pro
 ![POS](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/POS.png)
 
 
+## Logic function minimization

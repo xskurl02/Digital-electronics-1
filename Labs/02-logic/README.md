@@ -49,7 +49,7 @@ https://www.edaplayground.com/x/Lhff
 
 ## 3. 4-bit comparator
 
-### VHDL architecture from design file 
+### VHDL architecture from design file (design.vhd)
 ```vhdl
 
 library ieee;
@@ -87,7 +87,7 @@ end architecture Behavioral;
 ```
 
 
-### VHDL stimulus process from testbench file
+### VHDL stimulus process from testbench file (testbench.vhd)
 
 ```vhdl
 entity tb_comparator_4bit is

@@ -27,9 +27,17 @@
 
 
 ## 2. 2-bit comparator
-|**PoS form of the "less than" function**  |   **SoP form of the "equal" function**       | **SoP form of the "greater than" function** |
+## karnaugh maps
+
+|**B<A**  |   **B=A**       | **B>A** |
 |:-:|:-:|:-:|
-|![POS](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Less_POS.png) | ![SOP](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Equal_SOP.png)|![SOP](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Greater_SOP.png)|
+|![POS](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Karnaugh%20Maps/kmap_lesser.png) | ![SOP](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Karnaugh%20Maps/kmap_equals.png)|![SOP](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Karnaugh%20Maps/kmap_greater.png)|
+
+
+
+|**SoP form of the "greater than" function**  | **PoS form of the "less than" function** |
+|:-:|:-:|
+|![SoP](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Greater_SOP.png) | ![PoS](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Less_POS.png)|
 
 simplified SoP form of the "greater than" function and a simplified PoS form of the "less than" function.
 ![Min_SoP](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Greater_Min_SOP.png)
@@ -388,7 +396,7 @@ end architecture testbench;
 ```
 ### Simulator console output
 
-
+![Output](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/output.png)
 
 
 ### EDA playground link

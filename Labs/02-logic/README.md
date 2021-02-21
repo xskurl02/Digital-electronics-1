@@ -30,7 +30,7 @@ According to the truth table, write canonical SoP (Sum of Products) and PoS (Pro
 ![POS](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/POS.png)
 
 
-## Logic function minimization
+## 2. 2-bit comparator
 | **SoP form of the "greater than" function** |**PoS form of the "less than" function**|
 |        :-:          | :-:  |
 |![SOP](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Greater_SOP.png)           | ![POS](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Less_POS.png)    |
@@ -39,3 +39,7 @@ simplified SoP form of the "greater than" function and a simplified PoS form of 
 ![Min_SoP](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Greater_Min_SOP.png)
 
 ![Less_PoS](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Less_Min_PoS.png)
+
+### EDA playground link
+https://www.edaplayground.com/x/Lhff
+

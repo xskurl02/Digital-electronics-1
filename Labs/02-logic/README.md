@@ -40,6 +40,7 @@
 |![SoP](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Greater_SOP.png) | ![PoS](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Less_POS.png)|
 
 simplified SoP form of the "greater than" function and a simplified PoS form of the "less than" function.
+
 ![Min_SoP](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Greater_Min_SOP.png)
 
 ![Less_PoS](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/02-logic/Images/Less_Min_PoS.png)

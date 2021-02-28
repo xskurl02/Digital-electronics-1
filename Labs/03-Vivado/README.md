@@ -96,7 +96,7 @@ Click on the highlighted next button
 ![2.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/2.png)
 
 #### Step 3
-Input what you would like your project to be called (arrow with number 1) and click next (arrow with number 2)<br/>
+Input what you would like your project to be called (arrow with number 1) then click next (arrow with number 2)<br/>
 Advice: Try to avoid using spaces in project names
 ![3.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/3.png)
 
@@ -105,7 +105,7 @@ Make sure you select the RTL project only (arrow with number 1) and click Next (
 ![4.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/4.png)
 
 #### Step 5
-Click on create file button (arrow with number 1), input what you would like your file to be called (arrow with number 2) once done click OK (arrow with number 3) and click Next (arrow with number 4)<br/>
+Click on create file button (arrow with number 1), input what you would like your file to be called (arrow with number 2) once done click OK (arrow with number 3) then click Next (arrow with number 4)<br/>
 Advice: Dont forget to select what file type you want to use, in this tutorial we use VHDL 
 ![5.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/5.png)
 

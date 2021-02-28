@@ -1,7 +1,7 @@
 # Lab 3: Introduction to Vivado
 
 ## Part One
-### Table with connection of 16 slide switches and 16 LEDs on Nexys A7 board.
+### Table with connection of 16 slide switches and 16 LEDs on Nexys A7 board
 
 |  **Switch**    |**Connection**|    **LED**   |**Connection**|
 | 	:-:	 | 	:-: 	|      :-:     |      :-:     |
@@ -23,7 +23,7 @@
 | 	SW15	 |      V10     |     LED15    |      V11     |
 
 ## Part Two	
-### Two-bit wide 4-to-1 multiplexer.
+### Two-bit wide 4-to-1 multiplexer
 
 #### VHDL architecture from source file `mux_2bit_4to1.vhd`
 ```vhdl
@@ -38,7 +38,7 @@ begin
 end architecture Behavioral;
 ```
 
-#### VHDL stimulus process from testbench file `tb_mux_2bit_4to1.vhd` with syntax highlighting
+#### VHDL stimulus process from testbench file `tb_mux_2bit_4to1.vhd` 
 ```vhdl
     p_stimulus : process
     begin
@@ -73,10 +73,10 @@ end architecture Behavioral;
 end architecture testbench;
 ```
 
-#### Screenshot with simulated time waveforms; always display all inputs and outputs.
+#### Screenshot with simulated time waveforms
 ![Output Screenshot](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/OUTPUT%20screenshot.png)
 
 ## Part Three
-### 3. A Vivado tutorial.
+### 3. A Vivado tutorial
     * Your tutorial for Vivado design flow: project creation, adding source file, adding testbench file, running simulation, (adding XDC constraints file).
 

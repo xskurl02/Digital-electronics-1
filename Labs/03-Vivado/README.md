@@ -129,7 +129,7 @@ In this menu Vivado lets you configure your design file input and output, once d
 In case that you didnt do any changes to the configuration this window will pop up, click yes to confirm 
 ![10.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/10.png)
 
-#### Adding source file
+### Adding source file
 
 ##### Step 1
 Click on the Add Sources in the Project Manager menu
@@ -143,7 +143,7 @@ or go to File->Add Sources
 Select what type of file you wish to add
 ![1.Step_alternate](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_Source_File/2.png)
 
-#### Adding testbench file
+### Adding testbench file
 
 ##### Step 1
 Click on the Add Sources in the Project Manager menu
@@ -178,7 +178,7 @@ In case that you didnt do any changes to the configuration this window will pop 
 
 ![output](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/6.png)
 
-#### Running simulation
+### Running simulation
 
 ##### Step 1
 Click on the Run Simulation in the Project Manager menu, then click on Run Behavioral Simulation
@@ -192,7 +192,7 @@ Or go to Flow->Run Simulation->Run Behavioral Simulation
 
 ![output](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Simulation/2.png)
 
-#### Adding XDC constraints file
+### Adding XDC constraints file
 
 ##### Step 1
 Click on the Add Sources in the Project Manager menu

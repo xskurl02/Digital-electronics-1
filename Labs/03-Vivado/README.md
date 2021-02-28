@@ -77,6 +77,34 @@ end architecture testbench;
 ![Output Screenshot](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/OUTPUT%20screenshot.png)
 
 ## Part Three
-### 3. A Vivado tutorial
-    * Your tutorial for Vivado design flow: project creation, adding source file, adding testbench file, running simulation, (adding XDC constraints file).
+### A Vivado tutorial
+
+#### Project creation
+##### 1.Step
+
+![1.Step]
+
+##### 2.Step
+
+![2.Step]
+
+##### 3.Step
+
+![3.Step]
+
+##### 4.Step
+
+![4.Step]
+
+#### Adding source file
+
+
+#### Adding testbench file
+
+
+#### Running simulation
+
+
+#### Adding XDC constraints file
+
 

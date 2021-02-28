@@ -74,7 +74,7 @@ end architecture testbench;
 ```
 
 #### Screenshot with simulated time waveforms; always display all inputs and outputs.
-[]!()
+[](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/OUTPUT%20screenshot.png)
 
 ## Part Three
 ### 3. A Vivado tutorial.

@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Feb 28 01:36:13 2021
+# Process ID: 14128
+# Current directory: G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/03-vivado/Solutions/multiplexer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6328 G:\Documents\Tomas-Skurla\Digital-electronics-1\Labs\03-vivado\Solutions\multiplexer\multiplexer.xpr
+# Log file: G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/03-vivado/Solutions/multiplexer/vivado.log
+# Journal file: G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/03-vivado/Solutions/multiplexer\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/03-vivado/Solutions/multiplexer/multiplexer.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/03-vivado/Solutions/multiplexer/tb_mux_2bit_4to1_behav.wcfg
+source tb_mux_2bit_4to1.tcl
+relaunch_sim
+close_sim

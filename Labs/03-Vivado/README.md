@@ -16,7 +16,7 @@
 | 	SW8	 |      T8      |     LED8     |      V16     |
 | 	SW9	 | 	U8      |     LED9     |      T15     |
 | 	SW10	 | 	R16     |     LED10    |      U14     |
-| 	SW11	 |      T11     |     LED11    |      T16     |
+| 	SW11	 |      T13     |     LED11    |      T16     |
 | 	SW12	 |      H6      |     LED12    |      V15     |
 | 	SW13	 |      U12     |     LED13    |      V14     |
 | 	SW14	 |      U11     |     LED14    |      V12     |

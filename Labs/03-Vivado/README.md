@@ -83,7 +83,7 @@ end architecture testbench;
 ### Project creation
 
 #### 1.Step
-Click on Create Project button on quick start menu  
+Click on Create Project button on Quick Start menu  
 
 ![1.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/1.png)
 
@@ -105,7 +105,7 @@ Make sure you select the RTL project only (arrow with number 1) and click Next (
 ![4.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/4.png)
 
 #### 5.Step
-Click on create file button (arrow with number 1), Input what you would like your file to be called (arrow with number 2), click OK (arrow with number 3) and click Next (arrow with number 4)
+Click on create file button (arrow with number 1), input what you would like your file to be called (arrow with number 2) once done click OK (arrow with number 3) and click Next (arrow with number 4)
 Advice: Dont forget to select what file type you want to use, in this tutorial we use VHDL 
 ![5.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/5.png)
 
@@ -135,15 +135,14 @@ In case that you didnt do any changes to the configuration this window will pop 
 Click on the add source in the project manager menu
 ![1.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_Source_File/1.png)
 
-or
+or go to File->Add Sources
 
-go to File->Add Sources
 ![1.Step_alternate](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_Source_File/1_alternate.png)
 
 #### Adding testbench file
 
 ##### 1.Step
-Once in the adding source file wizard, you select Add or create  simulation sources (arrow with number 1) then click Next (arrow with number 2) 
+Once in the add source wizard, select Add or create simulation sources (arrow with number 1) then click Next (arrow with number 2) 
 ![1.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/1.png)
 
 ##### 2.Step
@@ -156,7 +155,7 @@ Once done adding source file (arrow with number 1), click Next(arrow with number
 ![3.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/3.png)
 
 ##### 4.Step
-In this menu Vivado lets you configure your design file input and output, you can always add them manually later. Once done click OK
+In this menu Vivado lets you configure your design file input and output, once done click OK
 ![4.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/4.png)
 
 ##### 5.Step
@@ -170,9 +169,10 @@ In case that you didnt do any changes to the configuration this window will pop 
 #### Running simulation
 
 ##### 1.Step
+Click on the Run Simulation in the Project Manager menu, then click on Run Behavioral Simulation
 ![1.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Simulation/1.png)
 
-or
+or  go to Flow->Run Simulation->Run Behavioral Simulation
 
 ![1.Step_Alternate](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Simulation/1_alternate.png)
 
@@ -180,6 +180,6 @@ or
 
 ![output](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Simulation/2.png)
 
-#### Adding XDC constraints file
+
 
 

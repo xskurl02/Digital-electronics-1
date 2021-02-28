@@ -96,21 +96,21 @@ Click on the highlighted next button
 ![2.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/2.png)
 
 #### 3.Step
-Change the name of the project to your current tast (arrow with number 1) and click next (arrow with number 2)
-Advice: Try to use project names without spaces in them
+Input what you would like your project to be called (arrow with number 1) and click next (arrow with number 2)
+Advice: Try to avoid using spaces in project names
 ![3.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/3.png)
 
 #### 4.Step
-Make sure you select only the RTL project (arrow with number 1) and click next (arrow with number 2)
+Make sure you select the RTL project only (arrow with number 1) and click Next (arrow with number 2)
 ![4.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/4.png)
 
 #### 5.Step
-Click on create file (arrow with number 1), input the name for your file (arrow with number 2), click OK (arrow with number 3) and click next (arrow with number 4)
-Advice: Dont forget to select what file type you want to use, for our tutorial we selected VHDL 
+Click on create file button (arrow with number 1), Input what you would like your file to be called (arrow with number 2), click OK (arrow with number 3) and click Next (arrow with number 4)
+Advice: Dont forget to select what file type you want to use, in this tutorial we use VHDL 
 ![5.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/5.png)
 
 #### 6.Step
-This step is optional and thus we will skip it, click next
+This step is optional and not a part of this tutorial, click next to continue
 ![6.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/6.png)
 
 #### 7.Step
@@ -118,52 +118,54 @@ Go to the boards section of menu bar (arrow with number 1), select Nexys A7-50T 
 ![7.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/7.png)
 
 ##### 8.Step
-This menu shows your project summary, here you can see if you configured your project correctly, if yes then click finish 
+This menu shows your project summary,you can see your project configuration here, if you configured your project correctly click Finish 
 ![8.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/8.png)
 
 ##### 9.Step
-In this menu Vivado lets you configure your input and output, we will be configuring it manually hence we will just click OK
+In this menu Vivado lets you configure your design file input and output, you can always add them manually later. Once done click OK
 ![9.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/9.png)
 
 ##### 10.Step
-Click yes
+In case that you didnt do any changes to the configuration this window will pop up, click yes to confirm 
 ![10.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/10.png)
 
 #### Adding source file
 
 ##### 1.Step
-
+Click on the add source in the project manager menu
 ![1.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_Source_File/1.png)
 
 or
 
+go to File->Add Sources
 ![1.Step_alternate](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_Source_File/1_alternate.png)
 
 #### Adding testbench file
 
 ##### 1.Step
-
+Once in the adding source file wizard, you select Add or create  simulation sources (arrow with number 1) then click Next (arrow with number 2) 
 ![1.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/1.png)
 
 ##### 2.Step
-
+Click on Create file button (arrow with number 1), input what you would like your file to be called (arrow with number 2) and click OK (arrow with number 3)
+Advice: its recommended to use tb_ at the beginning of the file name 
 ![2.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/2.png)
 
 ##### 3.Step
-
+Once done adding source file (arrow with number 1), click Next(arrow with number 2)
 ![3.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/3.png)
 
 ##### 4.Step
-
+In this menu Vivado lets you configure your design file input and output, you can always add them manually later. Once done click OK
 ![4.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/4.png)
 
 ##### 5.Step
-
+In case that you didnt do any changes to the configuration this window will pop up, click yes to confirm 
 ![5.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/5.png)
 
-##### 6.Step
+##### Output showcase
 
-![6.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/6.png)
+![output](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/6.png)
 
 #### Running simulation
 

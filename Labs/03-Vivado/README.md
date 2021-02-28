@@ -143,6 +143,22 @@ or go to File->Add Sources
 Select what type of file you wish to add
 ![1.Step_alternate](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_Source_File/2.png)
 
+##### Step 3
+Click on create file button (arrow with number 1), input what you would like your file to be called (arrow with number 2) once done click OK (arrow with number 3) and then click Finish (arrow with number 4)
+![3.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_Source_File/3.png)
+
+##### Step 4
+In this menu Vivado lets you configure your source file input and output, once done click OK
+![4.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_Source_File/4.png)
+
+##### Step 5
+In case that you didnt do any changes to the configuration this window will pop up, click yes to confirm 
+![5.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_Source_File/5.png)
+
+##### Output showcase
+
+![output](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_Source_File/output.png)
+
 ### Adding testbench file
 
 ##### Step 1
@@ -163,7 +179,7 @@ Advice: its recommended to use tb_ at the beginning of the file name
 ![2.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/2.png)
 
 ##### Step 4
-Once done adding sources file (arrow with number 1) click Next (arrow with number 2)
+Once done adding sources file (arrow with number 1) click Finish (arrow with number 2)
 ![3.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/3.png)
 
 ##### Step 5

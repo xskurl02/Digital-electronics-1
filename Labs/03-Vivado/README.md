@@ -187,7 +187,7 @@ In this menu Vivado lets you configure your testbench file input and output, onc
 ![4.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/4.png)
 
 ##### Step 6
-In case that you didnt do any changes to the configuration this window will pop up, click yes to confirm 
+In case that you didnt do any changes to the configuration this window is going to pop up, click yes to confirm
 ![5.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/5.png)
 
 ##### Output showcase

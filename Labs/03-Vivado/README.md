@@ -92,11 +92,11 @@ Or go to File->Project->New
 ![1.Step_alternate](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/1_alternative.png)
 
 #### Step 2
-Click on the highlighted next button
+Click on the highlighted Next button
 ![2.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/2.png)
 
 #### Step 3
-Input what you would like your project to be called (arrow with number 1) then click next (arrow with number 2)<br/>
+Input what you would like your project to be called (arrow with number 1) then click Next (arrow with number 2)<br/>
 Advice: Try to avoid using spaces in project names
 ![3.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/3.png)
 
@@ -114,7 +114,7 @@ This step is optional and not a part of this tutorial, click next to continue
 ![6.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/6.png)
 
 #### Step 7
-Go to the boards section of menu bar (arrow with number 1), select Nexys A7-50T from the list (arrow with number 2), click next (arrow with number 3)
+Go to the boards section of menu bar (arrow with number 1), select Nexys A7-50T from the list (arrow with number 2), once selected click Next (arrow with number 3)
 ![7.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/7.png)
 
 ##### Step 8
@@ -132,7 +132,7 @@ In case that you didnt do any changes to the configuration this window will pop 
 #### Adding source file
 
 ##### Step 1
-Click on the add source in the project manager menu
+Click on the Add Sources in the Project Manager menu
 ![1.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_Source_File/1.png)
 
 or go to File->Add Sources
@@ -146,7 +146,7 @@ Select what type of file you wish to add
 #### Adding testbench file
 
 ##### Step 1
-Click on the add source in the project manager menu
+Click on the Add Sources in the Project Manager menu
 ![output](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding%20XDC%20file/1.png)
 
 or go to File->Add Sources
@@ -154,7 +154,7 @@ or go to File->Add Sources
 ![1.Step_alternate](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding%20XDC%20file/1_alternate.png)
 
 ##### Step 2
-Once in the add source wizard, select Add or create simulation sources (arrow with number 1) then click Next (arrow with number 2) 
+Once in the Add Sources wizard, select Add or create simulation sources (arrow with number 1) then click Next (arrow with number 2) 
 ![1.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/1.png)
 
 ##### Step 3
@@ -163,11 +163,11 @@ Advice: its recommended to use tb_ at the beginning of the file name
 ![2.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/2.png)
 
 ##### Step 4
-Once done adding source file (arrow with number 1), click Next(arrow with number 2)
+Once done adding sources file (arrow with number 1) click Next (arrow with number 2)
 ![3.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/3.png)
 
 ##### Step 5
-In this menu Vivado lets you configure your design file input and output, once done click OK
+In this menu Vivado lets you configure your testbench file input and output, once done click OK
 ![4.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/4.png)
 
 ##### Step 6
@@ -195,7 +195,7 @@ Or go to Flow->Run Simulation->Run Behavioral Simulation
 #### Adding XDC constraints file
 
 ##### Step 1
-Click on the add source in the project manager menu
+Click on the Add Sources in the Project Manager menu
 ![output](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding%20XDC%20file/1.png)
 
 or go to File->Add Sources
@@ -207,7 +207,7 @@ Once in the add source wizard, select Add or create constrains then click Next
 ![2.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding%20XDC%20file/2.png)
 
 ##### Step 3
-Click on create file button (arrow with number 1), input what you would like your file to be called (arrow with number 2) once done click OK (arrow with number 3) and click Finish(arrow with number 4)
+Click on create file button (arrow with number 1), input what you would like your file to be called (arrow with number 2) once done click OK (arrow with number 3) and then click Finish (arrow with number 4)
 ![2.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding%20XDC%20file/3.png)
 
 ##### Output showcase

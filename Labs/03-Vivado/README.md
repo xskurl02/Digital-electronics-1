@@ -87,7 +87,7 @@ Click on Create Project button on Quick Start menu
 
 ![1.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/1.png)
 
-or alternatively go to File->Project->New
+Or go to File->Project->New
 
 ![1.Step_alternate](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/1_alternative.png)
 
@@ -96,7 +96,7 @@ Click on the highlighted next button
 ![2.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/2.png)
 
 #### 3.Step
-Input what you would like your project to be called (arrow with number 1) and click next (arrow with number 2)
+Input what you would like your project to be called (arrow with number 1) and click next (arrow with number 2)<br/>
 Advice: Try to avoid using spaces in project names
 ![3.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/3.png)
 
@@ -105,7 +105,7 @@ Make sure you select the RTL project only (arrow with number 1) and click Next (
 ![4.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/4.png)
 
 #### 5.Step
-Click on create file button (arrow with number 1), input what you would like your file to be called (arrow with number 2) once done click OK (arrow with number 3) and click Next (arrow with number 4)
+Click on create file button (arrow with number 1), input what you would like your file to be called (arrow with number 2) once done click OK (arrow with number 3) and click Next (arrow with number 4)<br/>
 Advice: Dont forget to select what file type you want to use, in this tutorial we use VHDL 
 ![5.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/5.png)
 
@@ -122,7 +122,7 @@ This menu shows your project summary,you can see your project configuration here
 ![8.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/8.png)
 
 ##### 9.Step
-In this menu Vivado lets you configure your design file input and output, you can always add them manually later. Once done click OK
+In this menu Vivado lets you configure your design file input and output, once done click OK
 ![9.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/9.png)
 
 ##### 10.Step
@@ -146,7 +146,7 @@ Once in the add source wizard, select Add or create simulation sources (arrow wi
 ![1.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/1.png)
 
 ##### 2.Step
-Click on Create file button (arrow with number 1), input what you would like your file to be called (arrow with number 2) and click OK (arrow with number 3)
+Click on Create file button (arrow with number 1), input what you would like your file to be called (arrow with number 2) and click OK (arrow with number 3)<br/>
 Advice: its recommended to use tb_ at the beginning of the file name 
 ![2.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/2.png)
 
@@ -172,7 +172,7 @@ In case that you didnt do any changes to the configuration this window will pop 
 Click on the Run Simulation in the Project Manager menu, then click on Run Behavioral Simulation
 ![1.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Simulation/1.png)
 
-or  go to Flow->Run Simulation->Run Behavioral Simulation
+Or go to Flow->Run Simulation->Run Behavioral Simulation
 
 ![1.Step_Alternate](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Simulation/1_alternate.png)
 
@@ -180,6 +180,22 @@ or  go to Flow->Run Simulation->Run Behavioral Simulation
 
 ![output](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Simulation/2.png)
 
+#### adding XDC constraints file
+##### 1.Step
+Click on the add source in the project manager menu
+![output](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding%20XDC%20file/1.png)
+
+or go to File->Add Sources
+
+![1.Step_alternate](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding%20XDC%20file/1_alternate.png)
+
+##### 2.Step
+Once in the add source wizard, select Add or create constrains then click Next 
+![2.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding%20XDC%20file/2.png)
+
+##### 3.Step
+Click on create file button (arrow with number 1), input what you would like your file to be called (arrow with number 2) once done click OK (arrow with number 3) and click Finish(arrow with number 4)
+![2.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding%20XDC%20file/3.png)
 
 
 

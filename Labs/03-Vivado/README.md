@@ -130,17 +130,19 @@ or alternatively
 
 ![1.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_Source_File/1.png)
 
-##### 2.Step
+or
 
 ![1.Step_alternate](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_Source_File/1_alternate.png)
 
 #### Adding testbench file
 
+##### 1.Step
+
 ![1.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/1.png)
 
 ##### 2.Step
 
-![2.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/2png)
+![2.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_TB_file/2.png)
 
 ##### 3.Step
 
@@ -160,6 +162,16 @@ or alternatively
 
 #### Running simulation
 
+##### 1.Step
+![1.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Simulation/1.png)
+
+or
+
+![1.Step_Alternate](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Simulation/1_alternate.png)
+
+##### Output showcase
+
+![output](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Simulation/2.png)
 
 #### Adding XDC constraints file
 

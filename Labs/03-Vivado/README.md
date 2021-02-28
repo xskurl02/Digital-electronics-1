@@ -77,51 +77,56 @@ end architecture testbench;
 ![Output Screenshot](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/OUTPUT%20screenshot.png)
 
 ## Part Three
+
 ### A Vivado tutorial
 
-#### Project creation
-##### 1.Step
+### Project creation
+
+#### 1.Step
+Click on Create Project button on quick start menu  
 
 ![1.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/1.png)
 
-or alternatively
+or alternatively go to File->Project->New
 
 ![1.Step_alternate](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/1_alternative.png)
 
-##### 2.Step
-
+#### 2.Step
+Click on the highlighted next button
 ![2.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/2.png)
 
-##### 3.Step
-
+#### 3.Step
+Change the name of the project to your current tast (arrow with number 1) and click next (arrow with number 2)
+Advice: Try to use project names without spaces in them
 ![3.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/3.png)
 
-##### 4.Step
-
+#### 4.Step
+Make sure you select only the RTL project (arrow with number 1) and click next (arrow with number 2)
 ![4.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/4.png)
 
-##### 5.Step
-
+#### 5.Step
+Click on create file (arrow with number 1), input the name for your file (arrow with number 2), click OK (arrow with number 3) and click next (arrow with number 4)
+Advice: Dont forget to select what file type you want to use, for our tutorial we selected VHDL 
 ![5.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/5.png)
 
-##### 6.Step
-
+#### 6.Step
+This step is optional and thus we will skip it, click next
 ![6.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/6.png)
 
-##### 7.Step
-
+#### 7.Step
+Go to the boards section of menu bar (arrow with number 1), select Nexys A7-50T from the list (arrow with number 2), click next (arrow with number 3)
 ![7.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/7.png)
 
 ##### 8.Step
-
+This menu shows your project summary, here you can see if you configured your project correctly, if yes then click finish 
 ![8.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/8.png)
 
 ##### 9.Step
-
+In this menu Vivado lets you configure your input and output, we will be configuring it manually hence we will just click OK
 ![9.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/9.png)
 
 ##### 10.Step
-
+Click yes
 ![10.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/10.png)
 
 #### Adding source file

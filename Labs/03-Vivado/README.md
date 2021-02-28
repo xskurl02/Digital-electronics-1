@@ -25,7 +25,7 @@
 ## Part Two	
 ### Two-bit wide 4-to-1 multiplexer
 
-#### VHDL architecture from source file `mux_2bit_4to1.vhd`
+#### VHDL architecture `mux_2bit_4to1.vhd`
 ```vhdl
 architecture Behavioral of mux_2bit_4to1 is
 begin
@@ -38,7 +38,7 @@ begin
 end architecture Behavioral;
 ```
 
-#### VHDL stimulus process from testbench file `tb_mux_2bit_4to1.vhd` 
+#### VHDL stimulus process  `tb_mux_2bit_4to1.vhd` 
 ```vhdl
     p_stimulus : process
     begin
@@ -73,7 +73,7 @@ end architecture Behavioral;
 end architecture testbench;
 ```
 
-#### Screenshot with simulated time waveforms
+#### Screenshot with time waveforms
 ![Output Screenshot](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/OUTPUT%20screenshot.png)
 
 ## Part Three
@@ -126,7 +126,7 @@ In this menu Vivado lets you configure your design file input and output, once d
 ![9.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/9.png)
 
 ##### Step 10
-In case that you didnt do any changes to the configuration this window will pop up, click yes to confirm 
+In case that you didnt do any changes to the configuration this window is going to pop up, click yes to confirm 
 ![10.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Project_Creation/10.png)
 
 ### Adding source file
@@ -140,7 +140,7 @@ or go to File->Add Sources
 ![1.Step_alternate](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_Source_File/1_alternate.png)
 
 ##### Step 2
-Select what type of file you wish to add
+Once in the Add Sources wizard, select Add or create design sources (arrow with number 1) then click Next (arrow with number 2) 
 ![1.Step_alternate](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_Source_File/2.png)
 
 ##### Step 3
@@ -152,7 +152,7 @@ In this menu Vivado lets you configure your source file input and output, once d
 ![4.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_Source_File/4.png)
 
 ##### Step 5
-In case that you didnt do any changes to the configuration this window will pop up, click yes to confirm 
+In case that you didnt do any changes to the configuration this window is going to pop up, click yes to confirm 
 ![5.Step](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/03-Vivado/Images/Tutorial/Adding_Source_File/5.png)
 
 ##### Output showcase

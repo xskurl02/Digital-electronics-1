@@ -135,7 +135,9 @@ end Behavioral;
 ```
 
 ### Screenshot with simulated time waveforms
-
+   
+   
+![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/04-segment/Images/Screenshot.png)   
 **TBA**
 
 ### Listing of VHDL code from source file `top.vhd` with 7-segment module instantiation.

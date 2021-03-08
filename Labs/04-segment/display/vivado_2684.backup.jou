@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar  8 08:37:51 2021
+# Process ID: 2684
+# Current directory: G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/04-segment/display
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11528 G:\Documents\Tomas-Skurla\Digital-electronics-1\Labs\04-segment\display\display.xpr
+# Log file: G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/04-segment/display/vivado.log
+# Journal file: G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/04-segment/display\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/04-segment/display/display.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim

@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Mar  7 07:14:45 2021
+# Process ID: 6916
+# Current directory: G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/04-segment/display
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9468 G:\Documents\Tomas-Skurla\Digital-electronics-1\Labs\04-segment\display\display.xpr
+# Log file: G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/04-segment/display/vivado.log
+# Journal file: G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/04-segment/display\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/04-segment/display/display.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/04-segment/display/display.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1006.305 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Mar  7 07:45:05 2021...

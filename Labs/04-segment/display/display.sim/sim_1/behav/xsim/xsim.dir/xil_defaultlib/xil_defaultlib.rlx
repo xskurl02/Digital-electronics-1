@@ -2,5 +2,7 @@
 2020.2
 Nov 18 2020
 09:47:47
-G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd,1615088494,vhdl,,,,tb_hex_7seg,,,,,,,,
-G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd,1615087663,vhdl,G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd,,,hex_7seg,,,,,,,,
+G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd,1615189445,vhdl,,,,tb_hex_7seg,,,,,,,,
+G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/04-segment/display/display.srcs/sim_1/new/tb_top.vhd,1615191239,vhdl,,,,tb_top,,,,,,,,
+G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/04-segment/display/display.srcs/sources_1/new/hex_7seg.vhd,1615189695,vhdl,G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/04-segment/display/display.srcs/sources_1/new/top.vhd,,,hex_7seg,,,,,,,,
+G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/04-segment/display/display.srcs/sources_1/new/top.vhd,1615189631,vhdl,G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/04-segment/display/display.srcs/sim_1/new/tb_top.vhd,,,top,,,,,,,,

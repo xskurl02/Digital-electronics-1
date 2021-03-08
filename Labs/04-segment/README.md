@@ -4,7 +4,17 @@
 
 ### Figure or table with connection of 7-segment displays on Nexys A7 board,
 
-**TBA**
+| **Segment** | **Connection** | **Anode** | **Connection** | 
+| :-: 	      |    :-:         |  :-:      |       :-:      |
+| CA   	      |      T10       |  AN0      |      J17       | 
+| CB  	      |      R10       |  AN1      |      J18       |
+| CC   	      |      K16       |  AN2      |      T9        |
+| CD  	      |      K13       |  AN3      |      J14       |
+| CE          |      P15       |  AN4      |      P14       |
+| CF          |      T11       |  AN5      |      T14       |
+| CG          |      L18       |  AN6      |      K2        |
+| DP          |      H15       |  AN7      |      U13       |
+
 
 ### Decoder truth table for common anode 7-segment display.
 
@@ -125,8 +135,10 @@ end Behavioral;
 ```
 
 ### Screenshot with simulated time waveforms
+   
+   
+![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/04-segment/Images/Screenshot.png)   
 
-**TBA**
 
 ### Listing of VHDL code from source file `top.vhd` with 7-segment module instantiation.
 ```vhdl
@@ -144,49 +156,48 @@ end Behavioral;
         );
 ```
 
-## 2. LED(7:4) indicators
+## 3. LED(7:4) indicators
 
-### Truth table and listing of VHDL code for LEDs(7:4) 
+### Truth table for LEDs(7:4) 
 
 | **Hex** | **Inputs** | **LED4** | **LED5** | **LED6** | **LED7** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| 0 | 0000 |  |  |  |  |
-| 1 | 0001 |  |  |  |  |
-| 2 |      |  |  |  |  |
-| 3 |      |  |  |  |  |
-| 4 |      |  |  |  |  |
-| 5 |      |  |  |  |  |
-| 6 |      |  |  |  |  |
-| 7 |      |  |  |  |  |
-| 8 | 1000 |  |  |  |  |
-| 9 |      |  |  |  |  |
-| A |      |  |  |  |  |
-| b |      |  |  |  |  |
-| C |      |  |  |  |  |
-| d |      |  |  |  |  |
-| E | 1110 |  |  |  |  |
-| F | 1111 |  |  |  |  |
+| 0   | 0000 | 1 | 0 | 0 | 0 |
+| 1   | 0001 | 0 | 0 | 1 | 1 |
+| 2 | 0010 | 0 | 0 | 0 | 1 |
+| 3 | 0011 | 0 | 0 | 1 | 0 |
+| 4 | 0100 | 0 | 0 | 0 | 1 |
+| 5 | 0101 | 0 | 0 | 1 | 0 |
+| 6 | 0110 | 0 | 0 | 0 | 0 |
+| 7 | 0111 | 0 | 0 | 1 | 0 |
+| 8 | 1000 | 0 | 0 | 0 | 1 |
+| 9 | 1001 | 0 | 0 | 1 | 0 |
+| A | 1010 | 0 | 1 | 0 | 0 |
+| b | 1011 | 0 | 1 | 1 | 0 |
+| C | 1100 | 0 | 1 | 0 | 0 |
+| d | 1101 | 0 | 1 | 1 | 0 |
+| E | 1110 | 0 | 1 | 0 | 0 |
+| F | 1111 | 0 | 1 | 1 | 0 |
 
+### listing of VHDL code for LEDs(7:4)
+```vhdl
+-- Turn LED(4) on if input value is equal to 0, ie "0000"
+    LED(4) <= '1' when SW = "0000" else '0';
+    -- Turn LED(5) on if input value is greater than 9
+    LED(5) <= '1' when (SW > "1001") else '0';
+    -- Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
+    LED(6) <= '1' when (SW = "0001" or SW = "0011" or SW = "0101" or 
+                        SW = "0111" or SW = "1001" or SW = "1011" or 
+                        SW = "1101" or SW = "1111") 
+                  else '0';
+    -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
+    LED(7) <= '1' when (SW = "0001" or SW = "0010" or SW = "0100" or 
+                        SW = "1000") 
+                  else '0';
+```
 
 ###  Screenshot with simulated time waveforms.
 13:55 -TBA
 
-
-
-## Lab assignment
-
-1. Preparation tasks (done before the lab at home). Submit:
-    * Figure or table with connection of 7-segment displays on Nexys A7 board,
-    * Decoder truth table for common anode 7-segment display.
-
-2. Seven-segment display decoder. Submit:
-    * Listing of VHDL architecture from source file `hex_7seg.vhd` with syntax highlighting,
-    * Listing of VHDL stimulus process from testbench file `tb_hex_7seg.vhd` with syntax highlighting and asserts,
-    * Screenshot with simulated time waveforms; always display all inputs and outputs,
-    * Listing of VHDL code from source file `top.vhd` with 7-segment module instantiation.
-
-3. LED(7:4) indicators. Submit:
-    * Truth table and listing of VHDL code for LEDs(7:4) with syntax highlighting,
-    * Screenshot with simulated time waveforms; always display all inputs and outputs.
 
 

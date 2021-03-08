@@ -54,16 +54,19 @@ begin
     -- A combinational process for 7-segment display (Common Anode)
     -- decoder. Any time "hex_i" is changed, the process is "executed".
     -- Output pin seg_o(6) controls segment A, seg_o(5) segment B, etc.
-    --       segment A
-    --        | segment B
-    --        |  | segment C
-    --        |  |  |   ...   segment G
-    --        +-+|+-+          |
-    --          |||            |
-    -- seg_o = "0000001"-------+
+    --         a
+    --       -----          a: seg_o(6)
+    --    f |     | b       b: seg_o(5)
+    --      |  g  |         c: seg_o(4)
+    --       -----          d: seg_o(3)
+    --    e |     | c       e: seg_o(2)
+    --      |     |         f: seg_o(1)
+    --       -----          g: seg_o(0)
+    --         d
+    -- 
     --------------------------------------------------------------------
-  p_7seg_decoder : process(hex_i) --proces sa vykonava sekvencne, vsetky pripadenia sa vykonaju po ukonceni procesu 
-    begin                         --Combinacny process, v sensivity listu nema clock
+  p_7seg_decoder : process(hex_i) 
+    begin                         
         case hex_i is
             when "0000" =>
                 seg_o <= "0000001";     -- 0
@@ -98,7 +101,7 @@ begin
             when others =>
                 seg_o <= "0111000";     -- F
         end case;
-    end process p_7seg_decoder; --vystup je posledny vysledok
+    end process p_7seg_decoder; 
 
 end Behavioral;
 ```
@@ -112,7 +115,7 @@ end Behavioral;
         report "Stimulus process started" severity note;
                
         
-        s_hex  <= "0000"; wait for 100 ns;--process specificky pre testbench
+        s_hex  <= "0000"; wait for 100 ns;
         s_hex  <= "0001"; wait for 100 ns;
         s_hex  <= "0010"; wait for 100 ns;
         s_hex  <= "0011"; wait for 100 ns;

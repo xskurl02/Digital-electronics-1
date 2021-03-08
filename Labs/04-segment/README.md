@@ -138,7 +138,7 @@ end Behavioral;
    
    
 ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/04-segment/Images/Screenshot.png)   
-**TBA**
+
 
 ### Listing of VHDL code from source file `top.vhd` with 7-segment module instantiation.
 ```vhdl
@@ -156,9 +156,9 @@ end Behavioral;
         );
 ```
 
-## 2. LED(7:4) indicators
+## 3. LED(7:4) indicators
 
-### Truth table and listing of VHDL code for LEDs(7:4) 
+### Truth table for LEDs(7:4) 
 
 | **Hex** | **Inputs** | **LED4** | **LED5** | **LED6** | **LED7** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -179,26 +179,39 @@ end Behavioral;
 | E | 1110 | 0 | 1 | 0 | 0 |
 | F | 1111 | 0 | 1 | 1 | 0 |
 
+### listing of VHDL code for LEDs(7:4)
+```vhdl
+-- LED(7:4) indicators
+    -- Turn LED(4) on if input value is equal to 0, ie "0000"
+    LED(4) <= '1' when (SW = "0000") else '0';
+    
+    -- Turn LED(5) on if input value is greater than "1001", ie 9
+    LED(5) <= '1' when (SW = "1010") else '0',
+              '1' when (SW = "1011") else '0',
+              '1' when (SW = "1100") else '0',
+              '1' when (SW = "1101") else '0',
+              '1' when (SW = "1110") else '0',
+              '1' when (SW = "1111") else '0';
+    
+    -- Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
+    LED(6) <= '1' when (SW = "0001") else '0',
+              '1' when (SW = "0011") else '0',
+              '1' when (SW = "0101") else '0',
+              '1' when (SW = "0111") else '0',
+              '1' when (SW = "1001") else '0',
+              '1' when (SW = "1011") else '0',
+              '1' when (SW = "1101") else '0',
+              '1' when (SW = "1111") else '0';
+    
+    -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
+    LED(7) <= '1' when (SW = "0001") else '0',
+              '1' when (SW = "0010") else '0',
+              '1' when (SW = "0100") else '0',
+              '1' when (SW = "1000") else '0';
+```
 
 ###  Screenshot with simulated time waveforms.
 13:55 -TBA
 
-
-
-## Lab assignment
-
-1. Preparation tasks (done before the lab at home). Submit:
-    * Figure or table with connection of 7-segment displays on Nexys A7 board,
-    * Decoder truth table for common anode 7-segment display.
-
-2. Seven-segment display decoder. Submit:
-    * Listing of VHDL architecture from source file `hex_7seg.vhd` with syntax highlighting,
-    * Listing of VHDL stimulus process from testbench file `tb_hex_7seg.vhd` with syntax highlighting and asserts,
-    * Screenshot with simulated time waveforms; always display all inputs and outputs,
-    * Listing of VHDL code from source file `top.vhd` with 7-segment module instantiation.
-
-3. LED(7:4) indicators. Submit:
-    * Truth table and listing of VHDL code for LEDs(7:4) with syntax highlighting,
-    * Screenshot with simulated time waveforms; always display all inputs and outputs.
 
 

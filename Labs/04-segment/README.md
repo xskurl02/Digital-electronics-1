@@ -137,7 +137,7 @@ end Behavioral;
 ### Screenshot with simulated time waveforms
    
    
-![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/04-segment/Images/Screenshot.png)   
+![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/04-segment/Images/Screenshot_new.png)   
 
 
 ### Listing of VHDL code from source file `top.vhd` with 7-segment module instantiation.
@@ -179,7 +179,7 @@ end Behavioral;
 | E | 1110 | 0 | 1 | 0 | 0 |
 | F | 1111 | 0 | 1 | 1 | 0 |
 
-### listing of VHDL code for LEDs(7:4)
+### Listing of VHDL code for LEDs(7:4)
 ```vhdl
 -- Turn LED(4) on if input value is equal to 0, ie "0000"
     LED(4) <= '1' when SW = "0000" else '0';
@@ -197,7 +197,7 @@ end Behavioral;
 ```
 
 ###  Screenshot with simulated time waveforms.
-13:55 -TBA
+![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/04-segment/Images/Screenshot2.png)
 
 
 

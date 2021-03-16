@@ -1,7 +1,7 @@
 # Lab 5: Binary counter
 
 ## Preparation tasks
-### Figure or table with connection of push buttons on Nexys A7 board,
+###  Table with connection of push buttons on Nexys A7 board
 | Button |  FPGA Pin | LV not pressed  | LV pressed | 
 | :-: | :-: | :-: | :-: |
 | BTNL | P17 | 0 | 3.3 | 
@@ -10,8 +10,8 @@
 | BTND | P18 | 0 | 3.3 | 
 | BTNC | N17 | 0 | 3.3 | 
 
-
-
+###  Figure with connection of push buttons on Nexys A7 board
+![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/05-counter/Images/n.1.png)
 
 
 

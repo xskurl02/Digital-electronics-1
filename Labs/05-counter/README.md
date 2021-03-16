@@ -2,13 +2,13 @@
 
 ## Preparation tasks
 ### Figure or table with connection of push buttons on Nexys A7 board,
- |**Button**  | **Connection** |  
- | :-: 	      |    :-:         |  
- | BTNL       |      P17       |   
- | BTNR       |      M17       |  
- | BTNU       |      M18       | 
- | BTND       |      P18       |  
- | BTNC       |      N17       | 
+| Button |  FPGA Pin | LV not pressed  | LV pressed | 
+| :-: | :-: | :-: | :-: |
+| BTNL | P17 | 0 | 3.3 | 
+| BTNR | M17 | 0 | 3.3 | 
+| BTNU | M18 | 0 | 3.3 | 
+| BTND | P18 | 0 | 3.3 | 
+| BTNC | N17 | 0 | 3.3 | 
 
 ### Table with calculated values.
 

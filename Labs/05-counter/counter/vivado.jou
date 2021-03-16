@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Mar 16 20:08:02 2021
+# Process ID: 14348
+# Current directory: G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/05-counter/counter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11704 G:\Documents\Tomas-Skurla\Digital-electronics-1\Labs\05-counter\counter\counter.xpr
+# Log file: G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/05-counter/counter/vivado.log
+# Journal file: G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/05-counter/counter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/05-counter/counter/counter.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/05-counter/counter/tb_cnt_up_down_behav.wcfg
+source tb_cnt_up_down.tcl
+close_sim
+launch_simulation
+open_wave_config G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/05-counter/counter/tb_cnt_up_down_behav.wcfg
+source tb_cnt_up_down.tcl
+close_sim
+launch_simulation
+open_wave_config G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/05-counter/counter/tb_cnt_up_down_behav.wcfg
+source tb_cnt_up_down.tcl
+close_sim

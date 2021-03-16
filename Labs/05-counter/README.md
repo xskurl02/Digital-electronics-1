@@ -10,6 +10,11 @@
 | BTND | P18 | 0 | 3.3 | 
 | BTNC | N17 | 0 | 3.3 | 
 
+
+
+
+
+
 ### Table with calculated values.
 
    | **Time interval** | **Number of clk periods** | **Number of clk periods in hex** | **Number of clk periods in binary** |
@@ -90,7 +95,7 @@
     end process p_stimulus;
 ```
 ### Screenshot with simulated time waveforms
-![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/05-counter/Images/waveform.png)
+![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/05-counter/Images/waveform2.png)
 
 ## Top level
 ### Listing of VHDL code from source file `top.vhd` with all instantiations for the 4-bit bidirectional counter

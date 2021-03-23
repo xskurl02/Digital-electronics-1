@@ -97,6 +97,12 @@
 ### Screenshot with simulated time waveforms
 ![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/05-counter/Images/waveform3.png)
 
+### Zoom on range from 0 to 450 ns 
+![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/05-counter/Images/0-450.png)
+
+### Zoom on range from 450 to 800 ns 
+![](https://github.com/xskurl02/Digital-electronics-1/blob/main/Labs/05-counter/Images/450-800.png)
+
 ## Top level
 ### Listing of VHDL code from source file `top.vhd` with all instantiations for the 4-bit bidirectional counter
 ```vhdl

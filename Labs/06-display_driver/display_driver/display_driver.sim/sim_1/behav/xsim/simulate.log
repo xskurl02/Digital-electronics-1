@@ -1,0 +1,12 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: Test failed for combination of 1001111 and 1101
+Time: 170 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: Test failed for combination of 0000110 and 0111
+Time: 190 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Error: Test failed for combination of 1001100 and 1101
+Time: 200 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+Note: Stimulus process finished
+Time: 400 ns  Iteration: 0  Process: /tb_driver_7seg_4digits/p_stimulus  File: G:/Documents/Tomas-Skurla/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd

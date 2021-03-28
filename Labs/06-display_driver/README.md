@@ -31,7 +31,7 @@
         end case;
     end process p_mux;
 ```
-### 	Listing of VHDL testbench file `tb_driver_7seg_4digits` with syntax highlighting and asserts
+### 	Listing of VHDL testbench file `tb_driver_7seg_4digits`
 
 ```vhdl
 ------------------------------------------------------------------------
@@ -163,7 +163,7 @@ architecture testbench of tb_driver_7seg_4digits is
 end architecture testbench;
 ```
 
-###  	Screenshot with simulated time waveforms; always display all inputs and outputs,
+###  	Screenshot with simulated time waveforms
 
 ![waveforms](Images/waveforms.png)
 

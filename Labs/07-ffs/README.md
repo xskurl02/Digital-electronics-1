@@ -296,8 +296,7 @@ q_bar <= s_q_bar;
     end process p_stimulus;
 ```
 ### Screenshot with simulated time waveforms
-
-
+![d_ff_arst_waveforms](Images/d_ff_ars.png)
 
 ### Listing of VHDL clock, reset and stimulus processes for p_d_ff_rst
 ```vhdl
@@ -371,7 +370,7 @@ q_bar <= s_q_bar;
 ```
 ### Screenshot with simulated time waveforms
 
-
+![d_ff_rst_waveforms](Images/d_ff_rst.png)
 
 
 ### Listing of VHDL clock, reset and stimulus processes for p_jk_ff_rst
@@ -464,7 +463,7 @@ q_bar <= s_q_bar;
     end process p_stimulus;
 ```
 ### Screenshot with simulated time waveforms
-
+![jk_ff_rst_waveforms](Images/jk_ff_rst.png)
 ### Listing of VHDL clock, reset and stimulus processes for p_t_ff_rst
 ```vhdl
 --------------------------------------------------------------------
@@ -539,8 +538,8 @@ q_bar <= s_q_bar;
     end process p_stimulus;
 ```
 ### Screenshot with simulated time waveforms
-
+![t_ff_rst_waveforms](Images/t_ff_rst.png)
 
 ## Shift register
 ### Image of the shift register schematic.
-
+![Shift_register](Images/Kreslenie1.png)

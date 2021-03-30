@@ -282,8 +282,391 @@ q     <= s_q;
 q_bar <= s_q_bar;
 
 ```
-### Listing of VHDL clock, reset and stimulus processes 
+### Listing of VHDL clock, reset and stimulus processes for p_d_ff_arst
+```vhdl
+     --------------------------------------------------------------------
+    -- Clock generation process
+    --------------------------------------------------------------------
+    p_clk_gen : process
+    begin
+        while now < 40 ms loop        
+            s_clk <= '0';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+            s_clk <= '1';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+        end loop;
+        wait;
+    end process p_clk_gen;
+    
+    --------------------------------------------------------------------
+    -- Reset generation process
+    --------------------------------------------------------------------
+
+     p_reset_gen : process
+        begin
+            s_arst <= '0';
+            wait for 28 ns;
+            
+            -- Reset activated
+            s_arst <= '1';
+            wait for 13 ns;
+    
+            --Reset deactivated
+            s_arst <= '0';
+            
+            wait for 17 ns;
+            
+            s_arst <= '1';
+            wait for 33 ns;
+            
+            wait for 660 ns;
+            s_arst <= '1';
+    
+            wait;
+     end process p_reset_gen;
+
+    --------------------------------------------------------------------
+    -- Data generation process
+    --------------------------------------------------------------------
+    p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+        
+        s_d  <= '0';
+        wait for 14 ns;
+        
+        s_d  <= '1';
+        wait for 2 ns;
+        
+        
+        wait for 8 ns;
+        s_d  <= '0';
+        wait for 6 ns;
+        
+        wait for 4 ns;
+        s_d  <= '1';
+        wait for 10 ns;
+        s_d  <= '0';
+        wait for 10 ns;
+        s_d  <= '1';
+        wait for 5 ns;
+        
+        assert ((s_arst = '1') and (s_q = '0') and (s_q_bar = '1'))
+        report "If you see this its Not asynch reset" severity error;
+        
+        wait for 5 ns;
+        s_d  <= '0';
+        
+        wait for 14 ns;
+        s_d  <= '1';
+        wait for 10 ns;
+        s_d  <= '0';
+        wait for 10 ns;
+        s_d  <= '1';
+        wait for 10 ns;
+        s_d  <= '0';
+        wait for 10 ns;
+        s_d  <= '1';
+        wait for 10 ns;
+        s_d  <= '0';
+        
+        
+       
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
+```
 ### Screenshot with simulated time waveforms
+
+
+
+### Listing of VHDL clock, reset and stimulus processes for p_d_ff_rst
+```vhdl
+    --------------------------------------------------------------------
+    -- Clock generation process
+    --------------------------------------------------------------------
+    p_clk_gen : process
+    begin
+        while now < 40 ms loop        
+            s_clk <= '0';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+            s_clk <= '1';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+        end loop;
+        wait;
+    end process p_clk_gen;
+    
+    --------------------------------------------------------------------
+    -- Reset generation process
+    --------------------------------------------------------------------
+
+     p_reset_gen : process
+        begin
+            s_rst <= '0';
+            wait for 28 ns;
+            
+            -- Reset activated
+            s_rst <= '1';
+            wait for 13 ns;
+    
+            --Reset deactivated
+            s_rst <= '0';
+            
+            wait for 17 ns;
+            
+            s_rst <= '1';
+            wait for 33 ns;
+            
+            wait for 660 ns;
+            s_rst <= '1';
+    
+            wait;
+     end process p_reset_gen;
+
+    --------------------------------------------------------------------
+    -- Data generation process
+    --------------------------------------------------------------------
+    p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+        
+        s_d  <= '0';
+        wait for 14 ns;
+        
+        s_d  <= '1';
+        wait for 2 ns;
+        
+        
+        wait for 8 ns;
+        s_d  <= '0';
+        wait for 6 ns;
+        
+        wait for 4 ns;
+        s_d  <= '1';
+        wait for 10 ns;
+        s_d  <= '0';
+        wait for 10 ns;
+        s_d  <= '1';
+        wait for 10 ns;
+   
+        s_d  <= '0';
+        
+        wait for 14 ns;
+        s_d  <= '1';
+        wait for 10 ns;
+        s_d  <= '0';
+        wait for 10 ns;
+        s_d  <= '1';
+        wait for 10 ns;
+        s_d  <= '0';
+        wait for 10 ns;
+        s_d  <= '1';
+        wait for 10 ns;
+        s_d  <= '0';
+        
+        
+       
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
+```
+### Screenshot with simulated time waveforms
+
+
+
+
+### Listing of VHDL clock, reset and stimulus processes for p_jk_ff_rst
+```vhdl
+--------------------------------------------------------------------
+-- Clock generation process
+--------------------------------------------------------------------
+    p_clk_gen : process
+    begin
+        while now < 40 ms loop        
+            s_clk <= '0';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+            s_clk <= '1';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+        end loop;
+        wait;
+    end process p_clk_gen;
+    
+--------------------------------------------------------------------
+-- Reset generation process
+--------------------------------------------------------------------
+
+     p_reset_gen : process
+        begin
+            s_rst <= '0';
+            wait for 18 ns;
+            
+            -- Reset activated
+            s_rst <= '1';
+            wait for 12 ns;
+    
+            --Reset deactivated
+            s_rst <= '0';
+            
+            wait for 49 ns;
+            
+            s_rst <= '1';
+            wait for 33 ns;
+            
+            wait for 660 ns;
+            s_rst <= '1';
+    
+            wait;
+     end process p_reset_gen;
+
+ --------------------------------------------------------------------
+ -- Data generation process
+ --------------------------------------------------------------------
+    p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+           
+        s_j  <= '0';
+        s_k  <= '0';
+        
+        
+        wait for 38 ns;
+        
+        assert ((s_rst = '0') and (s_j = '0') and (s_k = '0') and (s_q = '0') and (s_q_bar = '1'))
+        report "no change fail for s_j = '0' and s_k = '0'" severity error;
+        
+        wait for 2 ns;
+        s_j  <= '1';
+        s_k  <= '0';
+        wait for 6 ns;
+        
+        assert ((s_rst = '0') and (s_j = '1') and (s_k = '0') and (s_q = '1') and (s_q_bar = '0'))
+        report "set failed for s_j = '1' and s_k = '0'" severity error;
+        
+        wait for 1 ns;
+        s_j  <= '0';
+        s_k  <= '1';
+        wait for 13 ns;
+        
+        assert ((s_rst = '0') and (s_j = '0') and (s_k = '1') and (s_q = '0') and (s_q_bar = '1'))
+        report "reset fail for s_j = '0' and s_k = '1'" severity error;
+        
+        wait for 1 ns;
+        s_j  <= '1';
+        s_k  <= '0';
+        wait for 7 ns;
+        s_j  <= '1';
+        s_k  <= '1';
+        
+        wait for 8 ns;
+        
+        assert ((s_rst = '0') and (s_j = '1') and (s_k = '1') and (s_q = '0') and (s_q_bar = '1'))
+        report "toggle fail for s_j = '1' and s_k = '1'" severity error;
+        
+        wait for 2 ns;
+        s_j  <= '0';
+        s_k  <= '0';
+        wait for 7 ns;
+        s_j  <= '0';
+        s_k  <= '1';
+        wait for 7 ns;
+        s_j  <= '1';
+        s_k  <= '0';
+        wait for 7 ns;
+        s_j  <= '1';
+        s_k  <= '1';
+        
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
+```
+### Screenshot with simulated time waveforms
+
+### Listing of VHDL clock, reset and stimulus processes for p_t_ff_rst
+```vhdl
+--------------------------------------------------------------------
+    -- Clock generation process
+    --------------------------------------------------------------------
+    p_clk_gen : process
+    begin
+        while now < 40 ms loop        
+            s_clk <= '0';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+            s_clk <= '1';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+        end loop;
+        wait;
+    end process p_clk_gen;
+    
+    --------------------------------------------------------------------
+    -- Reset generation process
+    --------------------------------------------------------------------
+
+     p_reset_gen : process
+        begin
+            s_rst <= '0';
+            wait for 18 ns;
+            
+            -- Reset activated
+            s_rst <= '1';
+            wait for 13 ns;
+    
+            --Reset deactivated
+            s_rst <= '0';
+            
+            wait for 47 ns;
+            
+            s_rst <= '1';
+            wait for 33 ns;
+            
+            wait for 660 ns;
+            s_rst <= '1';
+    
+            wait;
+     end process p_reset_gen;
+
+    --------------------------------------------------------------------
+    -- Data generation process
+    --------------------------------------------------------------------
+    p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+       --No change 
+        s_t  <= '0';
+        wait for 38 ns;
+        --Invert
+        s_t  <= '1';
+        wait for 6 ns;
+        --No Change
+        s_t  <= '0';
+        wait for 13 ns;
+        --Invert
+        s_t  <= '1';        
+        wait for 17 ns;
+        --No change
+        s_t  <= '0';
+        wait for 7 ns;
+        --Invert
+        s_t  <= '1';
+        wait for 7 ns;
+        --No chagne
+        s_t  <= '0';
+        wait for 7 ns;
+        --Invert
+        s_t  <= '1';
+           
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
+```
+
+
+
+
+
+
+
+
+
 
 ## Shift register
 ### Image of the shift register schematic.

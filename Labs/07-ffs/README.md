@@ -49,149 +49,95 @@ p_d_latch : process (d, arst, en)
 ```
 ### VHDL reset and stimulus processes from the testbench `tb_d_latch.vhd` 
 ```vhdl
-   p_reset_gen : process
-    begin
-
+-- reset generation process
+p_reset_gen: process
+begin
         s_arst <= '0';
-        wait for 50 ns;
-
+        wait for 52 ns;
+        -- reset activated
         s_arst <= '1';
-        wait for 60 ns;
-        assert(s_q = '0' and s_q_bar = '1')
-        report "Test failed for reset value 1" severity error;
-
+        wait for 53ns;
+        -- reset deactivated
         s_arst <= '0';
-        wait for 100 ns;
-        assert(s_q = '1' and s_q_bar = '0')
-        report "Test failed for reset value 0" severity error;
-
+        wait for 250ns;
         s_arst <= '1';
-        wait for 53 ns;
-        assert(s_q = '0' and s_q_bar = '1')
-        report "Test failed for reset value 1" severity error;
-
-        s_arst <= '0';
-        wait for 74 ns;
-        assert(s_q = s_d and s_q_bar = (not s_d))
-        report "Test failed for reset value 0" severity error;
-
-        s_arst <= '1';
-        wait for 53 ns;
-        assert(s_q = '0' and s_q_bar = '1')
-        report "Test failed for reset value 1" severity error;
-
-        s_arst <= '0';
-        wait for 300 ns;
-        assert(s_q = s_d and s_q_bar = (not s_d))
-        report "Test failed for reset value 0" severity error;
-
-        s_arst <= '1';
-        wait for 53 ns;
-        assert(s_q = '0' and s_q_bar = '1')
-        report "Test failed for reset value 1" severity error;
-
-        s_arst <= '0';
         wait;
+end process p_reset_gen;
 
-    end process p_reset_gen;
-
-    p_stimulus : process
+-- data generation process
+p_stimulus : process
     begin
         report "Stimulus process started" severity note;
+        s_en    <= '0';
+        s_d     <= '0';
 
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+
+        s_en <= '1'; wait for 5 ns;
+        assert(s_q = '0' and s_q_bar = '1')
+        report "expected: s_q 0, q_bar 1" severity error;
+        
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '1';
+        
+        s_en <= '0'; wait for 5 ns;
+        assert(s_q = '1' and s_q_bar = '0') 
+        report "expected: asrt 1" severity error;
+        
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '0';      
+        
+        s_en <= '1'; wait for 20 ns;
+        assert(s_q = '0' and s_q_bar = '1') 
+        report "expected: asrt 1" severity error;
+               
+        s_d  <= '1';
+        wait for 100ns;
         s_d  <= '0';
-        s_en <= '0';
-
-        --d sekv
-        wait for 25 ns;
-        s_d <= '1';
-        wait for 25 ns;
-        s_d <= '0';
-        wait for 25 ns;
-        s_d <= '1';
-        wait for 25 ns;
-        s_d <= '0';
-        assert(s_arst = '1' and s_en = '0' and s_d = '1' and s_q = '0' and s_q_bar = '1')
-        report "Test failed for first set (arst=1, en=0, d=1, q=0)" severity error;
-
-        s_en <= '1';
-
-        --d sekv
-        wait for 25 ns;
-        s_d <= '1';
-        wait for 25 ns;
-        s_d <= '0';
-        wait for 25 ns;
-        s_d <= '1';
-        wait for 25 ns;
-        s_d <= '0';
-        assert(s_arst = '0' and s_en = '1' and s_d = '1' and s_q = '1' and s_q_bar = '0')
-        report "Test failed for second set (arst=0, en=1, d=1, q=1)" severity error;
-
-        s_en <= '0';
-
-        --d sekv
-        wait for 25 ns;
-        s_d <= '1';
-        wait for 25 ns;
-        s_d <= '0';
-        wait for 25 ns;
-        s_d <= '1';
-        wait for 25 ns;
-        s_d <= '0';
-        assert(s_arst = '0' and s_en = '0' and s_d = '1' and s_q = '0' and s_q_bar = '1')
-        report "Test failed for third set (arst=0, en=0, d=1, q=0)" severity error;
-
-        s_en <= '1';
-
-        --d sekv
-        wait for 25 ns;
-        s_d <= '1';
-        wait for 25 ns;
-        s_d <= '0';
-        wait for 25 ns;
-        s_d <= '1';
-        wait for 25 ns;
-        s_d <= '0';
-        assert(s_arst = '0' and s_en = '1' and s_d = '1' and s_q = '1' and s_q_bar = '0')
-        report "Test failed for fourth set (arst=0, en=1, d=1, q=1)" severity error;
-
-         --d sekv
-        wait for 25 ns;
-        s_d <= '1';
-        wait for 25 ns;
-        s_d <= '0';
-        wait for 25 ns;
-        s_d <= '1';
-        wait for 25 ns;
-        s_d <= '0';
-        assert(s_q = '1' and s_q_bar = '0')
-        report "Test failed for fifth set" severity error;
-
-        s_en <= '0';
-
-        wait for 100 ns;
-
-        s_en <= '1';
-
-         --d sekv
-        wait for 25 ns;
-        s_d <= '1';
-        wait for 25 ns;
-        s_d <= '0';
-        wait for 25 ns;
-        s_d <= '1';
-        wait for 25 ns;
-        s_d <= '0';
-        assert(s_arst = '1' and s_en = '1' and s_d = '1' and s_q = '0' and s_q_bar = '1')
-        report "Test failed for sixth set (arst=1, en=1, d=1, q=0)" severity error;
-
+        wait for 100ns;
+        
         report "Stimulus process finished" severity note;
+        
         wait;
-    end process p_stimulus;
+        
+end process p_stimulus;
 ```
 ### Screenshot with simulated time waveforms
-
+![d_latch_waveforms](Images/d_latch.png)
 ## Flip-flops
 
 ### VHDL code listing of the processes:
@@ -289,90 +235,63 @@ q_bar <= s_q_bar;
     --------------------------------------------------------------------
     p_clk_gen : process
     begin
-        while now < 40 ms loop        
+        while now < 750 ns loop         
             s_clk <= '0';
             wait for c_CLK_100MHZ_PERIOD / 2;
             s_clk <= '1';
             wait for c_CLK_100MHZ_PERIOD / 2;
         end loop;
-        wait;
+        wait;                           
     end process p_clk_gen;
-    
+     
     --------------------------------------------------------------------
     -- Reset generation process
     --------------------------------------------------------------------
-
-     p_reset_gen : process
-        begin
-            s_arst <= '0';
-            wait for 28 ns;
-            
-            -- Reset activated
-            s_arst <= '1';
-            wait for 13 ns;
+    p_reset_gen : process 
+    begin
+        s_arst <= '0';
+        wait for 28 ns;
+        s_arst <= '1';
+        wait for 13 ns;
+        s_arst <= '0';                
+        wait;
+    end process p_reset_gen;
     
-            --Reset deactivated
-            s_arst <= '0';
-            
-            wait for 17 ns;
-            
-            s_arst <= '1';
-            wait for 33 ns;
-            
-            wait for 660 ns;
-            s_arst <= '1';
-    
-            wait;
-     end process p_reset_gen;
-
     --------------------------------------------------------------------
     -- Data generation process
     --------------------------------------------------------------------
-    p_stimulus : process
+       p_stimulus : process
     begin
         report "Stimulus process started" severity note;
         
-        s_d  <= '0';
-        wait for 14 ns;
+        s_d <= '1';
+        wait for 40ns;
+        assert (s_q = '0' and s_q_bar = '1')
+        report "Error" severity note;
         
-        s_d  <= '1';
-        wait for 2 ns;
+        s_d <= '0';
+        wait for 40ns;
+        assert (s_q = '0' and s_q_bar = '1')
+        report "Error" severity note;
         
-        
-        wait for 8 ns;
-        s_d  <= '0';
-        wait for 6 ns;
-        
-        wait for 4 ns;
-        s_d  <= '1';
-        wait for 10 ns;
-        s_d  <= '0';
-        wait for 10 ns;
-        s_d  <= '1';
-        wait for 5 ns;
-        
-        assert ((s_arst = '1') and (s_q = '0') and (s_q_bar = '1'))
-        report "If you see this its Not asynch reset" severity error;
-        
-        wait for 5 ns;
-        s_d  <= '0';
-        
-        wait for 14 ns;
-        s_d  <= '1';
-        wait for 10 ns;
-        s_d  <= '0';
-        wait for 10 ns;
-        s_d  <= '1';
-        wait for 10 ns;
-        s_d  <= '0';
-        wait for 10 ns;
-        s_d  <= '1';
-        wait for 10 ns;
-        s_d  <= '0';
-        
-        
+        s_d <= '1';
+        wait for 40ns;
+        assert (s_q = '1' and s_q_bar = '0')
+        report "Error" severity note;
        
+        s_d <= '0';
+        wait for 40ns;
+        assert (s_q = '0' and s_q_bar = '1')
+        report "Error" severity note;
+        
+        wait for 40ns;
+        s_d <= '1';
+        wait for 20ns;
+        assert (s_q = '0' and s_q_bar = '1')
+        report "Error" severity note;
+ 
         report "Stimulus process finished" severity note;
+                
         wait;
     end process p_stimulus;
 ```
@@ -387,41 +306,29 @@ q_bar <= s_q_bar;
     --------------------------------------------------------------------
     p_clk_gen : process
     begin
-        while now < 40 ms loop        
+        while now < 750 ns loop         
             s_clk <= '0';
             wait for c_CLK_100MHZ_PERIOD / 2;
             s_clk <= '1';
             wait for c_CLK_100MHZ_PERIOD / 2;
         end loop;
-        wait;
+        wait;                           
     end process p_clk_gen;
     
     --------------------------------------------------------------------
     -- Reset generation process
     --------------------------------------------------------------------
 
-     p_reset_gen : process
-        begin
-            s_rst <= '0';
-            wait for 28 ns;
-            
-            -- Reset activated
-            s_rst <= '1';
-            wait for 13 ns;
+    p_reset_gen : process 
+    begin
+        s_rst <= '0';
+        wait for 58 ns;
+        s_rst <= '1';
+        wait for 23 ns;
+        s_rst <= '0';                
+        wait;
+    end process p_reset_gen;
     
-            --Reset deactivated
-            s_rst <= '0';
-            
-            wait for 17 ns;
-            
-            s_rst <= '1';
-            wait for 33 ns;
-            
-            wait for 660 ns;
-            s_rst <= '1';
-    
-            wait;
-     end process p_reset_gen;
 
     --------------------------------------------------------------------
     -- Data generation process
@@ -430,43 +337,35 @@ q_bar <= s_q_bar;
     begin
         report "Stimulus process started" severity note;
         
-        s_d  <= '0';
-        wait for 14 ns;
+        s_d <= '1';
+        wait for 10ns;
+        assert (s_q = '1' and s_q_bar = '0')
+        report "Error" severity note;
         
-        s_d  <= '1';
-        wait for 2 ns;
+        s_d <= '0';
+        wait for 15ns;
+        assert (s_q = '0' and s_q_bar = '1')
+        report "Error" severity note;
         
+        s_d <= '1';
+        wait for 10ns;
+        assert (s_q = '0' and s_q_bar = '1')
+        report "Error" severity note;
+       
+        s_d <= '0';
+        wait for 10ns;
+        assert (s_q = '0' and s_q_bar = '1')
+        report "Error" severity note;
         
-        wait for 8 ns;
-        s_d  <= '0';
-        wait for 6 ns;
-        
-        wait for 4 ns;
-        s_d  <= '1';
-        wait for 10 ns;
-        s_d  <= '0';
-        wait for 10 ns;
-        s_d  <= '1';
-        wait for 10 ns;
-   
-        s_d  <= '0';
-        
-        wait for 14 ns;
-        s_d  <= '1';
-        wait for 10 ns;
-        s_d  <= '0';
-        wait for 10 ns;
-        s_d  <= '1';
-        wait for 10 ns;
-        s_d  <= '0';
-        wait for 10 ns;
-        s_d  <= '1';
-        wait for 10 ns;
-        s_d  <= '0';
-        
+        wait for 30ns;
+        s_d <= '1';
+        wait for 10ns;
+        assert (s_q = '1' and s_q_bar = '0')
+        report "Error" severity note;
+ 
+        report "Stimulus process finished" severity note;
         
        
-        report "Stimulus process finished" severity note;
         wait;
     end process p_stimulus;
 ```
@@ -482,41 +381,27 @@ q_bar <= s_q_bar;
 --------------------------------------------------------------------
     p_clk_gen : process
     begin
-        while now < 40 ms loop        
+        while now < 750 ns loop         
             s_clk <= '0';
             wait for c_CLK_100MHZ_PERIOD / 2;
             s_clk <= '1';
             wait for c_CLK_100MHZ_PERIOD / 2;
         end loop;
-        wait;
+        wait;                           
     end process p_clk_gen;
-    
 --------------------------------------------------------------------
 -- Reset generation process
 --------------------------------------------------------------------
 
-     p_reset_gen : process
-        begin
-            s_rst <= '0';
-            wait for 18 ns;
-            
-            -- Reset activated
-            s_rst <= '1';
-            wait for 12 ns;
-    
-            --Reset deactivated
-            s_rst <= '0';
-            
-            wait for 49 ns;
-            
-            s_rst <= '1';
-            wait for 33 ns;
-            
-            wait for 660 ns;
-            s_rst <= '1';
-    
-            wait;
-     end process p_reset_gen;
+    p_reset_gen : process 
+    begin
+        s_rst <= '0';
+        wait for 48 ns;
+        s_rst <= '1';
+        wait for 23 ns;
+        s_rst <= '0';                
+        wait;
+    end process p_reset_gen;
 
  --------------------------------------------------------------------
  -- Data generation process
@@ -524,58 +409,57 @@ q_bar <= s_q_bar;
     p_stimulus : process
     begin
         report "Stimulus process started" severity note;
-           
-        s_j  <= '0';
-        s_k  <= '0';
         
+        s_j <= '1';
+        s_k <= '0';
+        wait for 10ns;
+        assert (s_q = '1' and s_q_bar = '0')
+        report "Error" severity note;
         
-        wait for 38 ns;
+        s_j <= '0';
+        s_k <= '1';
+        wait for 10ns;
+        assert (s_q = '0' and s_q_bar = '1')
+        report "Error" severity note;
         
-        assert ((s_rst = '0') and (s_j = '0') and (s_k = '0') and (s_q = '0') and (s_q_bar = '1'))
-        report "no change fail for s_j = '0' and s_k = '0'" severity error;
+        s_j <= '1';
+        s_k <= '0';
+        wait for 10ns;
+        assert (s_q = '1' and s_q_bar = '0')
+        report "Error" severity note;
+       
+        s_j <= '0';
+        s_k <= '1';
+        wait for 15ns;
+        assert (s_q = '0' and s_q_bar = '1')
+        report "Error" severity note;  
         
-        wait for 2 ns;
-        s_j  <= '1';
-        s_k  <= '0';
-        wait for 6 ns;
+        s_j <= '1';
+        s_k <= '1';
+        wait for 10ns;
+        assert (s_q = '1' and s_q_bar = '0')
+        report "Error" severity note;
         
-        assert ((s_rst = '0') and (s_j = '1') and (s_k = '0') and (s_q = '1') and (s_q_bar = '0'))
-        report "set failed for s_j = '1' and s_k = '0'" severity error;
+        s_j <= '1';
+        s_k <= '1';
+        wait for 15ns;
+        assert (s_q = '0' and s_q_bar = '1')
+        report "Error" severity note;
         
-        wait for 1 ns;
-        s_j  <= '0';
-        s_k  <= '1';
-        wait for 13 ns;
+        s_j <= '1';
+        s_k <= '1';
+        wait for 15ns;
+        assert (s_q = '1' and s_q_bar = '0')
+        report "Error" severity note;
         
-        assert ((s_rst = '0') and (s_j = '0') and (s_k = '1') and (s_q = '0') and (s_q_bar = '1'))
-        report "reset fail for s_j = '0' and s_k = '1'" severity error;
-        
-        wait for 1 ns;
-        s_j  <= '1';
-        s_k  <= '0';
-        wait for 7 ns;
-        s_j  <= '1';
-        s_k  <= '1';
-        
-        wait for 8 ns;
-        
-        assert ((s_rst = '0') and (s_j = '1') and (s_k = '1') and (s_q = '0') and (s_q_bar = '1'))
-        report "toggle fail for s_j = '1' and s_k = '1'" severity error;
-        
-        wait for 2 ns;
-        s_j  <= '0';
-        s_k  <= '0';
-        wait for 7 ns;
-        s_j  <= '0';
-        s_k  <= '1';
-        wait for 7 ns;
-        s_j  <= '1';
-        s_k  <= '0';
-        wait for 7 ns;
-        s_j  <= '1';
-        s_k  <= '1';
-        
+        s_j <= '0';
+        s_k <= '0';
+        wait for 10ns;
+        assert (s_q = '1' and s_q_bar = '0')
+        report "Error" severity note;
+ 
         report "Stimulus process finished" severity note;
+                
         wait;
     end process p_stimulus;
 ```
@@ -588,84 +472,73 @@ q_bar <= s_q_bar;
     --------------------------------------------------------------------
     p_clk_gen : process
     begin
-        while now < 40 ms loop        
+        while now < 750 ns loop         
             s_clk <= '0';
             wait for c_CLK_100MHZ_PERIOD / 2;
             s_clk <= '1';
             wait for c_CLK_100MHZ_PERIOD / 2;
         end loop;
-        wait;
+        wait;                           
     end process p_clk_gen;
     
     --------------------------------------------------------------------
     -- Reset generation process
     --------------------------------------------------------------------
 
-     p_reset_gen : process
-        begin
-            s_rst <= '0';
-            wait for 18 ns;
-            
-            -- Reset activated
-            s_rst <= '1';
-            wait for 13 ns;
+    p_reset_gen : process 
+    begin
+        s_rst <= '0';
+        wait for 38 ns;
+        s_rst <= '1';
+        wait for 20 ns;
+        s_rst <= '0';                
+        wait;
+    end process p_reset_gen;
     
-            --Reset deactivated
-            s_rst <= '0';
-            
-            wait for 47 ns;
-            
-            s_rst <= '1';
-            wait for 33 ns;
-            
-            wait for 660 ns;
-            s_rst <= '1';
-    
-            wait;
-     end process p_reset_gen;
-
     --------------------------------------------------------------------
     -- Data generation process
     --------------------------------------------------------------------
     p_stimulus : process
     begin
         report "Stimulus process started" severity note;
-       --No change 
-        s_t  <= '0';
-        wait for 38 ns;
-        --Invert
-        s_t  <= '1';
-        wait for 6 ns;
-        --No Change
-        s_t  <= '0';
-        wait for 13 ns;
-        --Invert
-        s_t  <= '1';        
-        wait for 17 ns;
-        --No change
-        s_t  <= '0';
-        wait for 7 ns;
-        --Invert
-        s_t  <= '1';
-        wait for 7 ns;
-        --No chagne
-        s_t  <= '0';
-        wait for 7 ns;
-        --Invert
-        s_t  <= '1';
-           
+        
+        wait for 20ns;
+        s_t <= '1';
+        wait for 10ns;
+        assert (s_q = '1' and s_q_bar = '0')
+        report "Error" severity note;
+        
+        s_t <= '0';
+        wait for 30ns;
+        assert (s_q = '1' and s_q_bar = '0')
+        report "Error" severity note;
+        
+        s_t <= '1';
+        wait for 10ns;
+        assert (s_q = '0' and s_q_bar = '1')
+        report "Error" severity note;
+        
+        s_t <= '0';
+        wait for 20ns;
+        assert (s_q = '0' and s_q_bar = '1')
+        report "Error" severity note;
+        
+        s_t <= '1';
+        wait for 10ns;
+        assert (s_q = '1' and s_q_bar = '0')
+        report "Error" severity note;
+        
+        s_t <= '0';
+        wait for 20ns;
+        assert (s_q = '1' and s_q_bar = '0')
+        report "Error" severity note;
+ 
         report "Stimulus process finished" severity note;
+                
         wait;
     end process p_stimulus;
 ```
-
-
-
-
-
-
-
-
+### Screenshot with simulated time waveforms
 
 
 ## Shift register

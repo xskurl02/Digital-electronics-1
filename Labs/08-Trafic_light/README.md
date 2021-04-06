@@ -246,22 +246,18 @@ end architecture Behavioral;
                     when WEST_GO =>
                         if (s_cnt < c_DELAY_4SEC) then
                             s_cnt <= s_cnt + 1;
-                        elsif((west_s = '0' and south_s = '1') or (west_s = '0' and south_s = '0')) then
+                        elsif((sens_w = '1' and sens_s = '0') or (sens_w = '0' and sens_s = '0')) then
                                 s_state <= WEST_GO;
                             else
-                            -- Move to the next state
-                                s_state <= WEST_WAIT
+                                s_state <= WEST_WAIT; 
                             end if;
-                            -- Reset local counter value 
-                                s_cnt   <= c_ZERO;
-                        end if;
-                       
+                            s_cnt   <= c_ZERO;
+               
                     when WEST_WAIT =>
                         if (s_cnt < c_DELAY_2SEC) then
                             s_cnt <= s_cnt + 1;
                         else
                             s_state <= STOP2;
-                            -- Reset local counter value 
                             s_cnt   <= c_ZERO;
                         end if;
                         
@@ -270,36 +266,36 @@ end architecture Behavioral;
                             s_cnt <= s_cnt + 1;
                         else
                             s_state <= SOUTH_GO;
-                            -- Reset local counter value 
                             s_cnt   <= c_ZERO;
                         end if;
                         
                     when SOUTH_GO =>
                         if (s_cnt < c_DELAY_4SEC) then
                             s_cnt <= s_cnt + 1;
-                        elsif((west_s = '1' and south_s = '0' ) or (west_s = '0' and south_s = '0')) then
+                        elsif((sens_w = '0' and sens_s = '1' ) or (sens_w = '0' and sens_s = '0')) then
                                 s_state <= SOUTH_GO;
                             else
                                 s_state <= SOUTH_WAIT;
                             end if;
-                            -- Reset local counter value 
                             s_cnt   <= c_ZERO;
-                        end if;
                         
                     when SOUTH_WAIT =>
                         if (unsigned(s_cnt) < c_DELAY_2SEC) then
                             s_cnt <= s_cnt + 1;
                         else
                             s_state <= STOP1;
-                            -- Reset local counter value 
                             s_cnt   <= c_ZERO;
                         end if;
- 
+
+                    -- It is a good programming practice to use the 
+                    -- OTHERS clause, even if all CASE choices have 
+                    -- been made. 
                     when others =>
                         s_state <= STOP1;
 
                 end case;
             end if; -- Synchronous reset
         end if; -- Rising edge
-    end process p_traffic_fsm;
+    end process p_smart_traffic_fsm;
+
 ```

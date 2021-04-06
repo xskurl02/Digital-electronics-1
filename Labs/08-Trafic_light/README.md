@@ -8,7 +8,7 @@
 | **State**    | A   | A   | B   | C   | C   | D   | A   | B   | C  | D    | B    | B    | B    | C    | D  | B  |
 | **Output R** | `0` | `0` | `0` | `0` | `0` | `1` | `0` | `0` | `0`| `1`  | `0`  | `0`  | `0`  | `0`  | `1`| `0`|
 ### Figure with connection of RGB LEDs on Nexys A7 board and completed table with color settings.
-
+![figure](Images/Figure.png)
 
 | **RGB LED** | **Artix-7 pin names** | **Red** | **Yellow** | **Green** |
 | :-:  | :-:           | :-:     | :-:        | :-:     |
@@ -17,7 +17,7 @@
 
 ## Traffic light controller
 ### State diagram
-
+![d_latch_waveforms](Images/Kreslenie1.png)
 ### Listing of VHDL code of sequential process `p_traffic_fsm` with syntax highlighting
 ```vhdl
 p_traffic_fsm : process(clk)
@@ -147,6 +147,12 @@ end architecture Behavioral;
 ```
 ### Screenshot(s) of the simulation, from which it is clear that controller works correctly.
 
+
+![d_latch_waveforms](Images/Screenshot1.png)
+![d_latch_waveforms](Images/Screenshot2.png)
+![d_latch_waveforms](Images/Screenshot3.png)
+
+
 ## Smart controller
 ### State table 
 <table>
@@ -161,7 +167,7 @@ end architecture Behavioral;
     <td>West</td>
     <td>No Cars <br>(00)</td>
     <td>Cars To West<br>(01)</td>
-    <td>Cars to East<br>(10)</td>
+    <td>Cars to South<br>(10)</td>
     <td>Cars from Both Directions <br>(11)</td>
   </tr>
 </thead>
@@ -207,9 +213,9 @@ end architecture Behavioral;
 
 ### State diagram
 
+![State of diagram](Images/Smart.png)
 
-
-### Listing of VHDL code of sequential process `p_smart_traffic_fsm` with syntax highlighting
+### Listing of VHDL code of sequential process `p_smart_traffic_fsm`
 ```vhdl
     p_smart_traffic_fsm : process(clk)
     begin
@@ -243,16 +249,19 @@ end architecture Behavioral;
                         elsif((west_s = '0' and south_s '1') or (west_s = '0' and south_s '0')) then
                                 s_state <= WEST_GO;
                             else
-                                s_state <= WEST_WAIT;
+                            -- Move to the next state
+                                s_state <= WEST_WAIT
                             end if;
-                            s_cnt   <= c_ZERO;
+                            -- Reset local counter value 
+                                s_cnt   <= c_ZERO;
                         end if;
-                        
+                       
                     when WEST_WAIT =>
                         if (s_cnt < c_DELAY_2SEC) then
                             s_cnt <= s_cnt + 1;
                         else
                             s_state <= STOP2;
+                            -- Reset local counter value 
                             s_cnt   <= c_ZERO;
                         end if;
                         
@@ -261,6 +270,7 @@ end architecture Behavioral;
                             s_cnt <= s_cnt + 1;
                         else
                             s_state <= SOUTH_GO;
+                            -- Reset local counter value 
                             s_cnt   <= c_ZERO;
                         end if;
                         
@@ -272,6 +282,7 @@ end architecture Behavioral;
                             else
                                 s_state <= SOUTH_WAIT;
                             end if;
+                            -- Reset local counter value 
                             s_cnt   <= c_ZERO;
                         end if;
                         
@@ -280,6 +291,7 @@ end architecture Behavioral;
                             s_cnt <= s_cnt + 1;
                         else
                             s_state <= STOP1;
+                            -- Reset local counter value 
                             s_cnt   <= c_ZERO;
                         end if;
  

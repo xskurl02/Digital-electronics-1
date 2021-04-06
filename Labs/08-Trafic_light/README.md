@@ -148,16 +148,18 @@ end architecture Behavioral;
 ### Screenshot(s) of the simulation, from which it is clear that controller works correctly.
 
 ## Smart controller
-### State table
-| **Current State** | South Light | West Light |    Next state         |
-| :--               | :-:         | :-:        | :-: | :-: | :-: | :-: |
-| **STOP**          |    	  |  	       |  No |  W  |  E  |  B  |
-| **WEST_GO**       |    	  |  	       |     |     |     |     |   
-| **WEST_WAIT**     |     	  |            |     |     |     |     | 
-| **SOUTH_GO **     |   	  |            |     |     |     |     | 
-| **SOUTH_WAIT**    |    	  |            |     |     |     |     |
+### State table 
+|		    |	        Light  	      ||	   Next state depending on input  	             ||||
+| **Current State** | South Light | West Light |  No Cars  |  Cars West   |  Cars South   | Cars Both Directions|
+| :--               | :-:         | :-:        | :-: 	   | :-: 	  | :-:		  | :-:		        |
+|   **WEST_GO**     |    	  |  	       |  	No |  	       W  |  	       E  |  		     B  |
+|  **WEST_WAIT**    |    	  |  	       |           |     	  |               |     		|   
+|  **SOUTH_GO **    |     	  |            |   	   | 	          |               |     		| 
+| **SOUTH_WAIT**    |   	  |            |     	   |              |               |              	| 
+
 
 
 ### State diagram
+
 ### Listing of VHDL code of sequential process `p_smart_traffic_fsm` with syntax highlighting
 

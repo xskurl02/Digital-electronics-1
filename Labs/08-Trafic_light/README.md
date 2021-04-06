@@ -10,6 +10,16 @@
 ### Figure with connection of RGB LEDs on Nexys A7 board and completed table with color settings.
 ![figure](Images/Figure.png)
 
+
+| **Button** | **Connection** |
+| :-: | :-: |
+| LD16 (R16) | N15 |
+| LD16 (G16) | M16 |
+| LD16 (B16) | R12 |
+| LD17 (R17) | N16 |
+| LD17 (G17) | R11 |
+| LD17 (B17) | G14 |
+
 | **RGB LED** | **Artix-7 pin names** | **Red** | **Yellow** | **Green** |
 | :-:  | :-:           | :-:     | :-:        | :-:     |
 | LD16 | N15, M16, R12 | `1,0,0` |  `1,1,0`   | `0,1,0` |

@@ -149,15 +149,61 @@ end architecture Behavioral;
 
 ## Smart controller
 ### State table 
-|		    |	        Light  	      ||	   Next state depending on input  	             ||||
-| **Current State** | South Light | West Light |  No Cars  |  Cars West   |  Cars South   | Cars Both Directions|
-| :--               | :-:         | :-:        | :-: 	   | :-: 	  | :-:		  | :-:		        |
-|   **WEST_GO**     |    	  |  	       |  	No |  	       W  |  	       E  |  		     B  |
-|  **WEST_WAIT**    |    	  |  	       |           |     	  |               |     		|   
-|  **SOUTH_GO **    |     	  |            |   	   | 	          |               |     		| 
-| **SOUTH_WAIT**    |   	  |            |     	   |              |               |              	| 
-
-
+<table>
+<thead>
+  <tr>
+    <th rowspan="2">Current state</th>
+    <th colspan="2">Lights</th>
+    <th colspan="4">Next state depending on input</th>
+  </tr>
+  <tr>
+    <td>South</td>
+    <td>West</td>
+    <td>No Cars <br>(00)</td>
+    <td>Cars To West<br>(01)</td>
+    <td>Cars to East<br>(10)</td>
+    <td>Cars from Both Directions <br>(11)</td>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>West go</td>
+    <td>Red</td>
+    <td>Green</td>
+    <td>West Go</td>
+    <td>West Go</td>
+    <td>West Wait</td>
+    <td>West Wait</td>
+  </tr>
+  <tr>
+    <td>West wait</td>
+    <td>Red</td>
+    <td>Yellow</td>
+    <td>South Go</td>
+    <td>South Go</td>
+    <td>South Go</td>
+    <td>South Go</td>
+  </tr>
+  <tr>
+    <td>South go</td>
+    <td>Green</td>
+    <td>Red</td>
+    <td>South go</td>
+    <td>South wait</td>
+    <td>South go</td>
+    <td>South wait</td>
+  </tr>
+  <tr>
+    <td>South wait</td>
+    <td>Yellow</td>
+    <td>Red</td>
+    <td>West go</td>
+    <td>West go </td>
+    <td>West go</td>
+    <td>West go</td>
+  </tr>
+</tbody>
+</table>
 
 ### State diagram
 

@@ -246,7 +246,7 @@ end architecture Behavioral;
                     when WEST_GO =>
                         if (s_cnt < c_DELAY_4SEC) then
                             s_cnt <= s_cnt + 1;
-                        elsif((west_s = '0' and south_s '1') or (west_s = '0' and south_s '0')) then
+                        elsif((west_s = '0' and south_s = '1') or (west_s = '0' and south_s = '0')) then
                                 s_state <= WEST_GO;
                             else
                             -- Move to the next state
@@ -277,7 +277,7 @@ end architecture Behavioral;
                     when SOUTH_GO =>
                         if (s_cnt < c_DELAY_4SEC) then
                             s_cnt <= s_cnt + 1;
-                        elsif((west_s = '1' and south_s '0' ) or (west_s = '0' and south_s '0')) then
+                        elsif((west_s = '1' and south_s = '0' ) or (west_s = '0' and south_s = '0')) then
                                 s_state <= SOUTH_GO;
                             else
                                 s_state <= SOUTH_WAIT;

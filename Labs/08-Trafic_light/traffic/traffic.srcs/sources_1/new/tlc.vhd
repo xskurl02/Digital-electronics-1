@@ -1,26 +1,97 @@
-# Lab 8: Traffic light controller
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 06.04.2021 02:47:05
+-- Design Name: 
+-- Module Name: tlc - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
 
-## Preparation tasks 
-### Completed state table,
-| **Input P** | `0` | `0` | `1` | `1` | `0` | `1` | `0` | `1` | `1` | `1` | `1` | `0` | `0` | `1` | `1` | `1` |
-| :-- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| **Clock** | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) |
-| **State**    | A   | A   | B   | C   | C   | D   | A   | B   | C  | D    | B    | B    | B    | C    | D  | B  |
-| **Output R** | `0` | `0` | `0` | `0` | `0` | `1` | `0` | `0` | `0`| `1`  | `0`  | `0`  | `0`  | `0`  | `1`| `0`|
-### Figure with connection of RGB LEDs on Nexys A7 board and completed table with color settings.
 
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
-| **RGB LED** | **Artix-7 pin names** | **Red** | **Yellow** | **Green** |
-| :-:  | :-:           | :-:     | :-:        | :-:     |
-| LD16 | N15, M16, R12 | `1,0,0` |  `1,1,0`   | `0,1,0` |
-| LD17 | N16, R11, G14 | `1,0,0` |  `1,1,0`   | `0,1,0` |
+------------------------------------------------------------------------
+-- Entity declaration for traffic light controller
+------------------------------------------------------------------------
+entity tlc is
+    port(
+        clk     : in  std_logic;
+        reset   : in  std_logic;
+        -- Traffic lights (RGB LEDs) for two directions
+        south_o : out std_logic_vector(3 - 1 downto 0);
+        west_o  : out std_logic_vector(3 - 1 downto 0)
+    );
+end entity tlc;
 
-## Traffic light controller
-### State diagram
+------------------------------------------------------------------------
+-- Architecture declaration for traffic light controller
+------------------------------------------------------------------------
+architecture Behavioral of tlc is
 
-### Listing of VHDL code of sequential process `p_traffic_fsm` with syntax highlighting
-```vhdl
-p_traffic_fsm : process(clk)
+    -- Define the states
+    type t_state is (STOP1,
+                     WEST_GO,
+                     WEST_WAIT,
+                     STOP2,
+                     SOUTH_GO,
+                     SOUTH_WAIT);
+    -- Define the signal that uses different states
+    signal s_state  : t_state;
+
+    -- Internal clock enable
+    signal s_en     : std_logic;
+    -- Local delay counter
+    signal   s_cnt  : unsigned(5 - 1 downto 0);
+
+    -- Specific values for local counter
+    constant c_DELAY_4SEC : unsigned(5 - 1 downto 0) := b"1_0000";
+    constant c_DELAY_2SEC : unsigned(5 - 1 downto 0) := b"0_1000";
+    constant c_DELAY_1SEC : unsigned(5 - 1 downto 0) := b"0_0100";
+    constant c_ZERO       : unsigned(5 - 1 downto 0) := b"0_0000";
+
+    -- Output values
+    constant c_RED        : std_logic_vector(3 - 1 downto 0) := b"100";
+    constant c_YELLOW     : std_logic_vector(3 - 1 downto 0) := b"110";
+    constant c_GREEN      : std_logic_vector(3 - 1 downto 0) := b"010";
+
+begin
+
+    --------------------------------------------------------------------
+    -- Instance (copy) of clock_enable entity generates an enable pulse
+    -- every 250 ms (4 Hz). Remember that the frequency of the clock 
+    -- signal is 100 MHz.
+    
+    -- JUST FOR SHORTER/FASTER SIMULATION
+    s_en <= '1';
+--    clk_en0 : entity work.clock_enable
+--        generic map(
+--            g_MAX =>        -- g_MAX = 250 ms / (1/100 MHz)
+--        )
+--        port map(
+--            clk   => clk,
+--            reset => reset,
+--            ce_o  => s_en
+--        );
+
+    --------------------------------------------------------------------
+    -- p_traffic_fsm:
+    -- The sequential process with synchronous reset and clock_enable 
+    -- entirely controls the s_state signal by CASE statement.
+    --------------------------------------------------------------------
+    p_traffic_fsm : process(clk)
     begin
         if rising_edge(clk) then
             if (reset = '1') then       -- Synchronous reset
@@ -113,9 +184,13 @@ p_traffic_fsm : process(clk)
             end if; -- Synchronous reset
         end if; -- Rising edge
     end process p_traffic_fsm;
-```
-### Listing of VHDL code of combinatorial process `p_output_fsm` with syntax highlighting,
-```vhdl
+
+    --------------------------------------------------------------------
+    -- p_output_fsm:
+    -- The combinatorial process is sensitive to state changes, and sets
+    -- the output signals accordingly. This is an example of a Moore 
+    -- state machine because the output is set based on the active state.
+    --------------------------------------------------------------------
     p_output_fsm : process(s_state)
     begin
         case s_state is
@@ -144,20 +219,3 @@ p_traffic_fsm : process(clk)
     end process p_output_fsm;
 
 end architecture Behavioral;
-```
-### Screenshot(s) of the simulation, from which it is clear that controller works correctly.
-
-## Smart controller
-### State table
-| **Current State** | South Light | West Light |    Next state         |
-| :--               | :-:         | :-:        | :-: | :-: | :-: | :-: |
-| **STOP**          |    	  |  	       |  No |  W  |  E  |  B  |
-| **WEST_GO**       |    	  |  	       |     |     |     |     |   
-| **WEST_WAIT**     |     	  |            |     |     |     |     | 
-| **SOUTH_GO **     |   	  |            |     |     |     |     | 
-| **SOUTH_WAIT**    |    	  |            |     |     |     |     |
-
-
-### State diagram
-### Listing of VHDL code of sequential process `p_smart_traffic_fsm` with syntax highlighting
-

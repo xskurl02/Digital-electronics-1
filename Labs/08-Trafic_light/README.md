@@ -167,7 +167,7 @@ end architecture Behavioral;
     <td>West</td>
     <td>No Cars <br>(00)</td>
     <td>Cars To West<br>(01)</td>
-    <td>Cars to East<br>(10)</td>
+    <td>Cars to South<br>(10)</td>
     <td>Cars from Both Directions <br>(11)</td>
   </tr>
 </thead>

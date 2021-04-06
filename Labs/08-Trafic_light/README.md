@@ -11,14 +11,14 @@
 ![figure](Images/Figure.png)
 
 
-| **Button** | **Connection** |
+| **RGB LED** | **Connection** |
 | :-: | :-: |
-| LD16 (R16) | N15 |
-| LD16 (G16) | M16 |
-| LD16 (B16) | R12 |
-| LD17 (R17) | N16 |
+| LD17 (R17) | N16 | 
 | LD17 (G17) | R11 |
 | LD17 (B17) | G14 |
+| LD16 (R16) | N15 |
+| LD16 (G16) | M16 |
+| LD16 (B16) | R12|
 
 | **RGB LED** | **Artix-7 pin names** | **Red** | **Yellow** | **Green** |
 | :-:  | :-:           | :-:     | :-:        | :-:     |

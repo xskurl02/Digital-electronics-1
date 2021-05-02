@@ -309,4 +309,5 @@ end architecture Behavioral;
     end process p_smart_traffic_fsm;
 
 ```
-[![](http://img.youtube.com/vi/3xFRkxmYkFs/0.jpg)](http://www.youtube.com/watch?v=3xFRkxmYkFs "")
+[![Project Video](http://img.youtube.com/vi/3xFRkxmYkFs/0.jpg)](http://www.youtube.com/watch?v=3xFRkxmYkFs "Project Overview")
+
